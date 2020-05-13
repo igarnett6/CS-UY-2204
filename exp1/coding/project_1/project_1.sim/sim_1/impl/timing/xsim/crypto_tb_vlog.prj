@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"crypto_tb_time_impl.v" \
+"../../../../../crypto_tb.v" \
+
+# Do not sort compile order
+nosort

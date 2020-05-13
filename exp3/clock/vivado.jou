@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 31 10:42:45 2020
+# Process ID: 8552
+# Current directory: S:/cs2204/exp3/clock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15612 S:\cs2204\exp3\clock\calculator.xpr
+# Log file: S:/cs2204/exp3/clock/vivado.log
+# Journal file: S:/cs2204/exp3/clock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project -read_only S:/cs2204/exp3/clock/calculator.xpr
+update_compile_order -fileset sources_1

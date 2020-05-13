@@ -1,0 +1,91 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Dec  9 11:31:06 2018
+| Host         : haluk running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file calculator_control_sets_placed.rpt
+| Design       : calculator
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    25 |
+| Unused register locations in slices containing registers |   104 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            9 |
+|      8 |            2 |
+|    16+ |           14 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              88 |           26 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             216 |           34 |
+| Yes          | No                    | No                     |             102 |           22 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             842 |          342 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+-------------------------------------+--------------------------------------------------------+------------------+----------------+
+|     Clock Signal     |            Enable Signal            |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++----------------------+-------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  alu_1/Overflow      |                                     |                                                        |                1 |              2 |
+|  DCLK_BUFG           |                                     | seven_segment_ctrl/AN4_i_1_n_0                         |                1 |              2 |
+|  DCLK_BUFG           |                                     | seven_segment_ctrl/AN3_i_1_n_0                         |                1 |              2 |
+|  DCLK_BUFG           |                                     | seven_segment_ctrl/AN2_i_1_n_0                         |                1 |              2 |
+|  DCLK_BUFG           |                                     | seven_segment_ctrl/AN1_i_1_n_0                         |                1 |              2 |
+|  DCLK_BUFG           |                                     | seven_segment_ctrl/AN0_i_1_n_0                         |                1 |              2 |
+|  DCLK_BUFG           |                                     | AE5_reg_n_0                                            |                1 |              2 |
+|  DCLK_BUFG           |                                     | AE6_reg_n_0                                            |                1 |              2 |
+|  DCLK_BUFG           |                                     | AE7_reg_n_0                                            |                1 |              2 |
+|  CLK100MHZ_IBUF_BUFG | KeyPad_ctrl/C0/Col[3]_i_1_n_0       |                                                        |                1 |              8 |
+|  CLK4HZ_BUFG         | FSM_sequential_STREG_reg[3]_i_1_n_0 |                                                        |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG |                                     |                                                        |                9 |             18 |
+|  CLK4HZ_BUFG         |                                     |                                                        |                4 |             18 |
+|  CLK4HZ_BUFG         | DIVOP_i_2_n_0                       | DIVOP_i_1_n_0                                          |                5 |             18 |
+|  CLK4HZ_BUFG         | B[3]_i_1_n_0                        |                                                        |                4 |             26 |
+|  alu_1/C_0           |                                     | alu_1/C_reg[15]_i_3_n_0                                |                4 |             32 |
+|  CLK100MHZ_IBUF_BUFG |                                     | seven_segment_ctrl/clear                               |                4 |             32 |
+|  CLK4HZ_BUFG         | alu_1/C_reg[0]_0                    | C[15]_i_1_n_0                                          |                6 |             32 |
+|  CLK100MHZ_IBUF_BUFG |                                     | KeyPad_ctrl/C0/sclk                                    |                5 |             40 |
+|  CLK100MHZ_IBUF_BUFG |                                     | freq_divider/temp3                                     |                6 |             46 |
+|  CLK100MHZ_IBUF_BUFG |                                     | seven_segment_ctrl/Frequency_divider_for_ssd_Ctrl/temp |                7 |             50 |
+|  DCLK_BUFG           |                                     |                                                        |               12 |             50 |
+|  CLK4HZ_BUFG         | B[7]_i_1_n_0                        |                                                        |               16 |             60 |
+|  CLK4HZ_BUFG         | KeyPad_ctrl/C0/A_reg[1]_rep__26_0   | A[3]_i_1_n_0                                           |               93 |            220 |
+|  CLK4HZ_BUFG         | A[7]_i_2_n_0                        | A[7]_i_1_n_0                                           |              238 |            572 |
++----------------------+-------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

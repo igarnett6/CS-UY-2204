@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Jan 31 10:42:35 2020
+# Process ID: 10880
+# Current directory: S:/cs2204/exp3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6652 S:\cs2204\exp3\alu.xpr
+# Log file: S:/cs2204/exp3/vivado.log
+# Journal file: S:/cs2204/exp3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/cs2204/exp3/alu.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

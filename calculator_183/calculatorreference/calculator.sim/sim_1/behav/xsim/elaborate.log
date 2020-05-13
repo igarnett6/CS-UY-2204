@@ -1,0 +1,24 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6184c945acbb4c24ab73df70aac8fab3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot calculator_tb_behav xil_defaultlib.calculator_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port R15 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:32]
+ERROR: [VRFC 10-426] cannot find port R14 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:31]
+ERROR: [VRFC 10-426] cannot find port R13 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:30]
+ERROR: [VRFC 10-426] cannot find port R12 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:29]
+ERROR: [VRFC 10-426] cannot find port R11 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:28]
+ERROR: [VRFC 10-426] cannot find port R10 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:27]
+ERROR: [VRFC 10-426] cannot find port R9 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:26]
+ERROR: [VRFC 10-426] cannot find port R8 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:25]
+ERROR: [VRFC 10-426] cannot find port R7 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:24]
+ERROR: [VRFC 10-426] cannot find port R6 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:23]
+ERROR: [VRFC 10-426] cannot find port R5 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:22]
+ERROR: [VRFC 10-426] cannot find port R4 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:21]
+ERROR: [VRFC 10-426] cannot find port R3 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:20]
+ERROR: [VRFC 10-426] cannot find port R2 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:19]
+ERROR: [VRFC 10-426] cannot find port R1 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:18]
+ERROR: [VRFC 10-426] cannot find port R0 on this module [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v:17]
+ERROR: [VRFC 10-2063] Module <alu> not found while processing module instance <alu_1> [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator.v:29]
+ERROR: [VRFC 10-2063] Module <ssdCtrl> not found while processing module instance <seven_segment_ctrl> [D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator.v:37]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

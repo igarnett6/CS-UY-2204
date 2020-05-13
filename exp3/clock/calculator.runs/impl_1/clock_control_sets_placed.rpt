@@ -1,0 +1,80 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec  6 14:32:49 2019
+| Host         : CSE024WK-W10 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file clock_control_sets_placed.rpt
+| Design       : clock
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      5 |            1 |
+|      8 |            5 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             483 |          230 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             131 |           46 |
+| Yes          | No                    | No                     |               9 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+------------------+--------------------------+------------------+----------------+
+|     Clock Signal     |   Enable Signal  |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++----------------------+------------------+--------------------------+------------------+----------------+
+|  temp2_BUFG          | AE0              |                          |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG |                  |                          |                5 |              5 |
+|  temp2_BUFG          | H[7]_i_1_n_0     | hoursl[31]_i_1_n_0       |                4 |              8 |
+|  temp2_BUFG          | M[7]_i_1_n_0     | hoursl[31]_i_1_n_0       |                4 |              8 |
+|  temp2_BUFG          | S[7]_i_1_n_0     | hoursl[31]_i_1_n_0       |                4 |              8 |
+|  temp2_BUFG          | i[7]_i_1_n_0     |                          |                6 |              8 |
+|  temp2_BUFG          | STREGVAL_OBUF[2] | hoursl[31]_i_1_n_0       |                5 |              8 |
+|  CLK100MHZ_IBUF_BUFG |                  | seven_segment_ctrl/clear |                4 |             16 |
+|  CLK100MHZ_IBUF_BUFG |                  | freq_divider/temp2_0     |                5 |             18 |
+|  CLK100MHZ_IBUF_BUFG |                  | freq_divider/temp        |                7 |             25 |
+|  DCLK                |                  |                          |               14 |             33 |
+|  temp2_BUFG          |                  | hoursl[31]_i_1_n_0       |               30 |             72 |
+|  temp2_BUFG          |                  |                          |              211 |            445 |
++----------------------+------------------+--------------------------+------------------+----------------+
+
+

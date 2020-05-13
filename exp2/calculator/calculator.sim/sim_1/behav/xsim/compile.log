@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/CS2204/exp2/calculator/calculator.srcs/sources_1/imports/calculator/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/CS2204/exp2/calculator/calculator.srcs/sources_1/imports/calculator/calculator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/CS2204/exp2/calculator/calculator.srcs/sources_1/imports/calculator/calculator_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_tb

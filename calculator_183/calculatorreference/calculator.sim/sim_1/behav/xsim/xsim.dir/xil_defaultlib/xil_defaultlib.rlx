@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+D:/work/academic/cs2204/fall2018/labfiles/exp3v/alu.v,1543075669,verilog,,D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator.v,,alu,,,,,,,,
+D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator.v,1543075672,verilog,,D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v,,calculator,,,,,,,,
+D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v,1543017249,verilog,,,,calculator_tb,,,,,,,,
+D:/work/academic/cs2204/fall2018/labfiles/exp3v/ssdCtrl.vhd,1542144024,vhdl,,,,ssdctrl,,,,,,,,

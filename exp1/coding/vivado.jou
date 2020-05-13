@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 31 11:46:23 2019
+# Process ID: 2296
+# Current directory: S:/cs2204/exp1/coding
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5796 S:\cs2204\exp1\coding\crypto.xpr
+# Log file: S:/cs2204/exp1/coding/vivado.log
+# Journal file: S:/cs2204/exp1/coding\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/cs2204/exp1/coding/crypto.xpr
+update_compile_order -fileset sources_1

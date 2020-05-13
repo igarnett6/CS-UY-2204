@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov  1 16:55:49 2019
+# Process ID: 16532
+# Current directory: S:/cs2204/calculator_183/calculator_183.runs/synth_1
+# Command line: vivado.exe -log calculator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculator.tcl
+# Log file: S:/cs2204/calculator_183/calculator_183.runs/synth_1/calculator.vds
+# Journal file: S:/cs2204/calculator_183/calculator_183.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source calculator.tcl -notrace

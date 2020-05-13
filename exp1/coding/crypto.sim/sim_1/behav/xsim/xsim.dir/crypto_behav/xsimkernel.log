@@ -1,0 +1,7 @@
+Running: xsim.dir/crypto_behav/xsimk.exe -simmode gui -wdb crypto_behav.wdb -simrunnum 0 -socket 62877
+Design successfully loaded
+Design Loading Memory Usage: 5380 KB (Peak: 5380 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 6036 KB (Peak: 6036 KB)
+Simulation CPU Usage: 156 ms

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/cs2204/exp2/calcalu/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/cs2204/exp2/calcalu/alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_tb

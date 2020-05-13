@@ -1,0 +1,102 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+K:     -128 + M:     -128 Result:             -256 Overflow: 0
+K:     -128 - M:     -128 Result:                0 Overflow: 0
+K:     -128 * M:     -128 Result:            16384 Overflow: 0
+K:     -128 / M:     -128 Result:        1 Remainder:        0  Overflow: 0
+K:     -128 ^ M:     -128 Result:              256 Overflow: 1
+K:     -128 + M:     -127 Result:             -255 Overflow: 0
+K:     -128 - M:     -127 Result:               -1 Overflow: 0
+K:     -128 * M:     -127 Result:            16256 Overflow: 0
+K:     -128 / M:     -127 Result:        1 Remainder:      255  Overflow: 0
+K:     -128 ^ M:     -127 Result:              511 Overflow: 1
+K:     -128 + M:     -126 Result:             -254 Overflow: 0
+K:     -128 - M:     -126 Result:               -2 Overflow: 0
+K:     -128 * M:     -126 Result:            16128 Overflow: 0
+K:     -128 / M:     -126 Result:        1 Remainder:      254  Overflow: 0
+K:     -128 ^ M:     -126 Result:              510 Overflow: 1
+K:     -128 + M:     -125 Result:             -253 Overflow: 0
+K:     -128 - M:     -125 Result:               -3 Overflow: 0
+K:     -128 * M:     -125 Result:            16000 Overflow: 0
+K:     -128 / M:     -125 Result:        1 Remainder:      253  Overflow: 0
+K:     -128 ^ M:     -125 Result:              509 Overflow: 1
+K:     -128 + M:     -124 Result:             -252 Overflow: 0
+K:     -128 - M:     -124 Result:               -4 Overflow: 0
+K:     -128 * M:     -124 Result:            15872 Overflow: 0
+K:     -128 / M:     -124 Result:        1 Remainder:      252  Overflow: 0
+K:     -128 ^ M:     -124 Result:              508 Overflow: 1
+K:     -128 + M:     -123 Result:             -251 Overflow: 0
+K:     -128 - M:     -123 Result:               -5 Overflow: 0
+K:     -128 * M:     -123 Result:            15744 Overflow: 0
+K:     -128 / M:     -123 Result:        1 Remainder:      251  Overflow: 0
+K:     -128 ^ M:     -123 Result:              507 Overflow: 1
+K:     -128 + M:     -122 Result:             -250 Overflow: 0
+K:     -128 - M:     -122 Result:               -6 Overflow: 0
+K:     -128 * M:     -122 Result:            15616 Overflow: 0
+K:     -128 / M:     -122 Result:        1 Remainder:      250  Overflow: 0
+K:     -128 ^ M:     -122 Result:              506 Overflow: 1
+K:     -128 + M:     -121 Result:             -249 Overflow: 0
+K:     -128 - M:     -121 Result:               -7 Overflow: 0
+K:     -128 * M:     -121 Result:            15488 Overflow: 0
+K:     -128 / M:     -121 Result:        1 Remainder:      249  Overflow: 0
+K:     -128 ^ M:     -121 Result:              505 Overflow: 1
+K:     -128 + M:     -120 Result:             -248 Overflow: 0
+K:     -128 - M:     -120 Result:               -8 Overflow: 0
+K:     -128 * M:     -120 Result:            15360 Overflow: 0
+K:     -128 / M:     -120 Result:        1 Remainder:      248  Overflow: 0
+K:     -128 ^ M:     -120 Result:              504 Overflow: 1
+K:     -128 + M:     -119 Result:             -247 Overflow: 0
+K:     -128 - M:     -119 Result:               -9 Overflow: 0
+K:     -128 * M:     -119 Result:            15232 Overflow: 0
+K:     -128 / M:     -119 Result:        1 Remainder:      247  Overflow: 0
+K:     -128 ^ M:     -119 Result:              503 Overflow: 1
+K:     -128 + M:     -118 Result:             -246 Overflow: 0
+K:     -128 - M:     -118 Result:              -10 Overflow: 0
+K:     -128 * M:     -118 Result:            15104 Overflow: 0
+K:     -128 / M:     -118 Result:        1 Remainder:      246  Overflow: 0
+K:     -128 ^ M:     -118 Result:              502 Overflow: 1
+K:     -128 + M:     -117 Result:             -245 Overflow: 0
+K:     -128 - M:     -117 Result:              -11 Overflow: 0
+K:     -128 * M:     -117 Result:            14976 Overflow: 0
+K:     -128 / M:     -117 Result:        1 Remainder:      245  Overflow: 0
+K:     -128 ^ M:     -117 Result:              501 Overflow: 1
+K:     -128 + M:     -116 Result:             -244 Overflow: 0
+K:     -128 - M:     -116 Result:              -12 Overflow: 0
+K:     -128 * M:     -116 Result:            14848 Overflow: 0
+K:     -128 / M:     -116 Result:        1 Remainder:      244  Overflow: 0
+K:     -128 ^ M:     -116 Result:              500 Overflow: 1
+K:     -128 + M:     -115 Result:             -243 Overflow: 0
+K:     -128 - M:     -115 Result:              -13 Overflow: 0
+K:     -128 * M:     -115 Result:            14720 Overflow: 0
+K:     -128 / M:     -115 Result:        1 Remainder:      243  Overflow: 0
+K:     -128 ^ M:     -115 Result:              499 Overflow: 1
+K:     -128 + M:     -114 Result:             -242 Overflow: 0
+K:     -128 - M:     -114 Result:              -14 Overflow: 0
+K:     -128 * M:     -114 Result:            14592 Overflow: 0
+K:     -128 / M:     -114 Result:        1 Remainder:      242  Overflow: 0
+K:     -128 ^ M:     -114 Result:              498 Overflow: 1
+K:     -128 + M:     -113 Result:             -241 Overflow: 0
+K:     -128 - M:     -113 Result:              -15 Overflow: 0
+K:     -128 * M:     -113 Result:            14464 Overflow: 0
+K:     -128 / M:     -113 Result:        1 Remainder:      241  Overflow: 0
+K:     -128 ^ M:     -113 Result:              497 Overflow: 1
+K:     -128 + M:     -112 Result:             -240 Overflow: 0
+K:     -128 - M:     -112 Result:              -16 Overflow: 0
+K:     -128 * M:     -112 Result:            14336 Overflow: 0
+K:     -128 / M:     -112 Result:        1 Remainder:      240  Overflow: 0
+K:     -128 ^ M:     -112 Result:              496 Overflow: 1
+K:     -128 + M:     -111 Result:             -239 Overflow: 0
+K:     -128 - M:     -111 Result:              -17 Overflow: 0
+K:     -128 * M:     -111 Result:            14208 Overflow: 0
+K:     -128 / M:     -111 Result:        1 Remainder:      239  Overflow: 0
+K:     -128 ^ M:     -111 Result:              495 Overflow: 1
+K:     -128 + M:     -110 Result:             -238 Overflow: 0
+K:     -128 - M:     -110 Result:              -18 Overflow: 0
+K:     -128 * M:     -110 Result:            14080 Overflow: 0
+K:     -128 / M:     -110 Result:        1 Remainder:      238  Overflow: 0
+K:     -128 ^ M:     -110 Result:              494 Overflow: 1
+K:     -128 + M:     -109 Result:             -237 Overflow: 0
+K:     -128 - M:     -109 Result:              -19 Overflow: 0
+K:     -128 * M:     -109 Result:            13952 Overflow: 0
+K:     -128 / M:     -109 Result:        1 Remainder:      237  Overflow: 0
+K:     -128 ^ M:     -109 Result:              493 Overflow: 1

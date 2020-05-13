@@ -1,0 +1,26 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3a7ad981e42349e3abdd17ae0266f588 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot calculator_tb_behav xil_defaultlib.calculator_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "S:/cs2204/exp2/calculator/calculator.v" Line 3. Module calculator doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "S:/cs2204/exp2/calculator/alu.v" Line 3. Module alu doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.FREQDIV [freqdiv_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder [decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.PmodKEYPAD [pmodkeypad_default]
+Compiling module xil_defaultlib.alu
+Compiling architecture behavioral of entity xil_defaultlib.ssdCtrl [ssdctrl_default]
+Compiling module xil_defaultlib.calculator
+Compiling module xil_defaultlib.calculator_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot calculator_tb_behav

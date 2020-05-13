@@ -1,0 +1,12 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+S:/cs2204/calculator_183/calculator_183.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+S:/cs2204/exp2/calculator/Decoder.vhd,1318972171,vhdl,,,,decoder,,,,,,,,
+S:/cs2204/exp2/calculator/FREQDIV.vhd,1471629146,vhdl,,,,freqdiv,,,,,,,,
+S:/cs2204/exp2/calculator/PmodKEYPAD.vhd,1453421032,vhdl,,,,pmodkeypad,,,,,,,,
+S:/cs2204/exp2/calculator/alu.v,1572036025,verilog,,S:/cs2204/exp2/calculator/calculator.v,,alu,,,,,,,,
+S:/cs2204/exp2/calculator/calculator.v,1544311481,verilog,,S:/cs2204/exp2/calculator/calculator_tb.v,,calculator,,,,,,,,
+S:/cs2204/exp2/calculator/calculator_tb.v,1572640339,verilog,,,,calculator_tb,,,,,,,,
+S:/cs2204/exp2/calculator/ssdCtrl.vhd,1544306060,vhdl,,,,ssdctrl,,,,,,,,

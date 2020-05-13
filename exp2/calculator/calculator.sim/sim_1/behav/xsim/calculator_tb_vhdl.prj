@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../calculator.srcs/sources_1/imports/calculator/Decoder.vhd" \
+"../../../../calculator.srcs/sources_1/imports/calculator/FREQDIV.vhd" \
+"../../../../calculator.srcs/sources_1/imports/calculator/PmodKEYPAD.vhd" \
+"../../../../calculator.srcs/sources_1/imports/calculator/ssdCtrl.vhd" \
+
+# Do not sort compile order
+nosort

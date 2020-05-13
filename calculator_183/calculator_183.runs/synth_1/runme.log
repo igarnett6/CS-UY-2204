@@ -1,0 +1,1996 @@
+
+*** Running vivado
+    with args -log calculator.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculator.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source calculator.tcl -notrace
+Command: synth_design -top calculator -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6564 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 438.578 ; gain = 98.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'calculator' [S:/cs2204/exp2/calculator/calculator.v:3]
+	Parameter RESET bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0010 
+	Parameter S3 bound to: 4'b0011 
+	Parameter S4 bound to: 4'b0100 
+	Parameter S5 bound to: 4'b0101 
+	Parameter S6 bound to: 4'b0110 
+	Parameter S7 bound to: 4'b0111 
+	Parameter S8 bound to: 4'b1000 
+	Parameter S9 bound to: 4'b1001 
+	Parameter S10 bound to: 4'b1010 
+	Parameter S11 bound to: 4'b1011 
+	Parameter S12 bound to: 4'b1100 
+	Parameter S13 bound to: 4'b1101 
+INFO: [Synth 8-638] synthesizing module 'FREQDIV' [S:/cs2204/exp2/calculator/FREQDIV.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'FREQDIV' (1#1) [S:/cs2204/exp2/calculator/FREQDIV.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'PmodKEYPAD' [S:/cs2204/exp2/calculator/PmodKEYPAD.vhd:28]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'S:/cs2204/exp2/calculator/Decoder.vhd:24' bound to instance 'C0' of component 'Decoder' [S:/cs2204/exp2/calculator/PmodKEYPAD.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [S:/cs2204/exp2/calculator/Decoder.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (2#1) [S:/cs2204/exp2/calculator/Decoder.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'PmodKEYPAD' (3#1) [S:/cs2204/exp2/calculator/PmodKEYPAD.vhd:28]
+INFO: [Synth 8-6157] synthesizing module 'alu' [S:/cs2204/exp2/calculator/alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (4#1) [S:/cs2204/exp2/calculator/alu.v:3]
+INFO: [Synth 8-638] synthesizing module 'ssdCtrl' [S:/cs2204/exp2/calculator/ssdCtrl.vhd:42]
+INFO: [Synth 8-3491] module 'FREQDIV' declared at 'S:/cs2204/exp2/calculator/FREQDIV.vhd:32' bound to instance 'Frequency_divider_for_ssd_Ctrl' of component 'FREQDIV' [S:/cs2204/exp2/calculator/ssdCtrl.vhd:115]
+INFO: [Synth 8-226] default block is never used [S:/cs2204/exp2/calculator/ssdCtrl.vhd:133]
+INFO: [Synth 8-226] default block is never used [S:/cs2204/exp2/calculator/ssdCtrl.vhd:166]
+INFO: [Synth 8-226] default block is never used [S:/cs2204/exp2/calculator/ssdCtrl.vhd:213]
+INFO: [Synth 8-226] default block is never used [S:/cs2204/exp2/calculator/ssdCtrl.vhd:225]
+INFO: [Synth 8-256] done synthesizing module 'ssdCtrl' (5#1) [S:/cs2204/exp2/calculator/ssdCtrl.vhd:42]
+INFO: [Synth 8-6155] done synthesizing module 'calculator' (6#1) [S:/cs2204/exp2/calculator/calculator.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 501.109 ; gain = 160.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 501.109 ; gain = 160.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 501.109 ; gain = 160.797
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [S:/cs2204/exp2/calculator/calculator.xdc]
+Finished Parsing XDC File [S:/cs2204/exp2/calculator/calculator.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [S:/cs2204/exp2/calculator/calculator.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calculator_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calculator_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 854.324 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 854.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 854.324 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 854.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 854.324 ; gain = 514.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 854.324 ; gain = 514.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 854.324 ; gain = 514.012
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "temp" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "temp1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "temp3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "DecodeOut" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [S:/cs2204/exp2/calculator/alu.v:53]
+INFO: [Common 17-14] Message 'Synth 8-5845' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "SEG" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'STREG_reg' in module 'calculator'
+INFO: [Synth 8-5544] ROM "AE2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AE2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STREG" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [S:/cs2204/exp2/calculator/alu.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'res_reg' [S:/cs2204/exp2/calculator/alu.v:53]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                             0000 |                             0000
+                      S1 |                             0001 |                             0001
+                      S2 |                             0010 |                             0010
+                      S3 |                             0011 |                             0011
+                      S4 |                             0100 |                             0100
+                      S5 |                             0101 |                             0101
+                      S6 |                             0110 |                             0110
+                      S7 |                             0111 |                             0111
+                      S8 |                             1000 |                             1000
+                      S9 |                             1001 |                             1001
+                     S10 |                             1010 |                             1010
+                     S11 |                             1011 |                             1011
+                     S12 |                             1100 |                             1100
+                     S13 |                             1101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STREG_reg' using encoding 'sequential' in module 'calculator'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 854.324 ; gain = 514.012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
+	               19 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 38    
++---Multipliers : 
+	                 8x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 126   
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     19 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   3 Input     16 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	  16 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 4     
+	  20 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 25    
+	  11 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	   5 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 23    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module calculator 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	  14 Input     16 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 4     
+	  14 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	  14 Input      1 Bit        Muxes := 23    
+Module FREQDIV 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module Decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 8     
+	  11 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
++---Multipliers : 
+	                 8x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 126   
+	   2 Input     16 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module ssdCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+	  20 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP res126, operation Mode is: A*B.
+DSP Report: operator res126 is absorbed into DSP res126.
+DSP Report: operator res126 is absorbed into DSP res126.
+DSP Report: Generating DSP res125, operation Mode is: A*B.
+DSP Report: operator res125 is absorbed into DSP res125.
+DSP Report: operator res125 is absorbed into DSP res125.
+DSP Report: Generating DSP res124, operation Mode is: A*B.
+DSP Report: operator res124 is absorbed into DSP res124.
+DSP Report: operator res124 is absorbed into DSP res124.
+DSP Report: Generating DSP res123, operation Mode is: A*B.
+DSP Report: operator res123 is absorbed into DSP res123.
+DSP Report: operator res123 is absorbed into DSP res123.
+DSP Report: Generating DSP res122, operation Mode is: A*B.
+DSP Report: operator res122 is absorbed into DSP res122.
+DSP Report: operator res122 is absorbed into DSP res122.
+DSP Report: Generating DSP res121, operation Mode is: A*B.
+DSP Report: operator res121 is absorbed into DSP res121.
+DSP Report: operator res121 is absorbed into DSP res121.
+DSP Report: Generating DSP res120, operation Mode is: A*B.
+DSP Report: operator res120 is absorbed into DSP res120.
+DSP Report: operator res120 is absorbed into DSP res120.
+DSP Report: Generating DSP res119, operation Mode is: A*B.
+DSP Report: operator res119 is absorbed into DSP res119.
+DSP Report: operator res119 is absorbed into DSP res119.
+DSP Report: Generating DSP res118, operation Mode is: A*B.
+DSP Report: operator res118 is absorbed into DSP res118.
+DSP Report: operator res118 is absorbed into DSP res118.
+DSP Report: Generating DSP res117, operation Mode is: A*B.
+DSP Report: operator res117 is absorbed into DSP res117.
+DSP Report: operator res117 is absorbed into DSP res117.
+DSP Report: Generating DSP res116, operation Mode is: A*B.
+DSP Report: operator res116 is absorbed into DSP res116.
+DSP Report: operator res116 is absorbed into DSP res116.
+DSP Report: Generating DSP res115, operation Mode is: A*B.
+DSP Report: operator res115 is absorbed into DSP res115.
+DSP Report: operator res115 is absorbed into DSP res115.
+DSP Report: Generating DSP res114, operation Mode is: A*B.
+DSP Report: operator res114 is absorbed into DSP res114.
+DSP Report: operator res114 is absorbed into DSP res114.
+DSP Report: Generating DSP res113, operation Mode is: A*B.
+DSP Report: operator res113 is absorbed into DSP res113.
+DSP Report: operator res113 is absorbed into DSP res113.
+DSP Report: Generating DSP res112, operation Mode is: A*B.
+DSP Report: operator res112 is absorbed into DSP res112.
+DSP Report: operator res112 is absorbed into DSP res112.
+DSP Report: Generating DSP res111, operation Mode is: A*B.
+DSP Report: operator res111 is absorbed into DSP res111.
+DSP Report: operator res111 is absorbed into DSP res111.
+DSP Report: Generating DSP res126, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res126 is absorbed into DSP res126.
+DSP Report: operator res126 is absorbed into DSP res126.
+DSP Report: Generating DSP res125, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res125 is absorbed into DSP res125.
+DSP Report: operator res125 is absorbed into DSP res125.
+DSP Report: Generating DSP res124, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res124 is absorbed into DSP res124.
+DSP Report: operator res124 is absorbed into DSP res124.
+DSP Report: Generating DSP res123, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res123 is absorbed into DSP res123.
+DSP Report: operator res123 is absorbed into DSP res123.
+DSP Report: Generating DSP res122, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res122 is absorbed into DSP res122.
+DSP Report: operator res122 is absorbed into DSP res122.
+DSP Report: Generating DSP res121, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res121 is absorbed into DSP res121.
+DSP Report: operator res121 is absorbed into DSP res121.
+DSP Report: Generating DSP res120, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res120 is absorbed into DSP res120.
+DSP Report: operator res120 is absorbed into DSP res120.
+DSP Report: Generating DSP res119, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res119 is absorbed into DSP res119.
+DSP Report: operator res119 is absorbed into DSP res119.
+DSP Report: Generating DSP res118, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res118 is absorbed into DSP res118.
+DSP Report: operator res118 is absorbed into DSP res118.
+DSP Report: Generating DSP res117, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res117 is absorbed into DSP res117.
+DSP Report: operator res117 is absorbed into DSP res117.
+DSP Report: Generating DSP res116, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res116 is absorbed into DSP res116.
+DSP Report: operator res116 is absorbed into DSP res116.
+DSP Report: Generating DSP res115, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res115 is absorbed into DSP res115.
+DSP Report: operator res115 is absorbed into DSP res115.
+DSP Report: Generating DSP res114, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res114 is absorbed into DSP res114.
+DSP Report: operator res114 is absorbed into DSP res114.
+DSP Report: Generating DSP res113, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res113 is absorbed into DSP res113.
+DSP Report: operator res113 is absorbed into DSP res113.
+DSP Report: Generating DSP res112, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res112 is absorbed into DSP res112.
+DSP Report: operator res112 is absorbed into DSP res112.
+DSP Report: Generating DSP res111, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res111 is absorbed into DSP res111.
+DSP Report: operator res111 is absorbed into DSP res111.
+DSP Report: Generating DSP res110, operation Mode is: A*B.
+DSP Report: operator res110 is absorbed into DSP res110.
+DSP Report: operator res110 is absorbed into DSP res110.
+DSP Report: Generating DSP res109, operation Mode is: A*B.
+DSP Report: operator res109 is absorbed into DSP res109.
+DSP Report: operator res109 is absorbed into DSP res109.
+DSP Report: Generating DSP res108, operation Mode is: A*B.
+DSP Report: operator res108 is absorbed into DSP res108.
+DSP Report: operator res108 is absorbed into DSP res108.
+DSP Report: Generating DSP res107, operation Mode is: A*B.
+DSP Report: operator res107 is absorbed into DSP res107.
+DSP Report: operator res107 is absorbed into DSP res107.
+DSP Report: Generating DSP res106, operation Mode is: A*B.
+DSP Report: operator res106 is absorbed into DSP res106.
+DSP Report: operator res106 is absorbed into DSP res106.
+DSP Report: Generating DSP res105, operation Mode is: A*B.
+DSP Report: operator res105 is absorbed into DSP res105.
+DSP Report: operator res105 is absorbed into DSP res105.
+DSP Report: Generating DSP res104, operation Mode is: A*B.
+DSP Report: operator res104 is absorbed into DSP res104.
+DSP Report: operator res104 is absorbed into DSP res104.
+DSP Report: Generating DSP res103, operation Mode is: A*B.
+DSP Report: operator res103 is absorbed into DSP res103.
+DSP Report: operator res103 is absorbed into DSP res103.
+DSP Report: Generating DSP res102, operation Mode is: A*B.
+DSP Report: operator res102 is absorbed into DSP res102.
+DSP Report: operator res102 is absorbed into DSP res102.
+DSP Report: Generating DSP res101, operation Mode is: A*B.
+DSP Report: operator res101 is absorbed into DSP res101.
+DSP Report: operator res101 is absorbed into DSP res101.
+DSP Report: Generating DSP res100, operation Mode is: A*B.
+DSP Report: operator res100 is absorbed into DSP res100.
+DSP Report: operator res100 is absorbed into DSP res100.
+DSP Report: Generating DSP res99, operation Mode is: A*B.
+DSP Report: operator res99 is absorbed into DSP res99.
+DSP Report: operator res99 is absorbed into DSP res99.
+DSP Report: Generating DSP res98, operation Mode is: A*B.
+DSP Report: operator res98 is absorbed into DSP res98.
+DSP Report: operator res98 is absorbed into DSP res98.
+DSP Report: Generating DSP res97, operation Mode is: A*B.
+DSP Report: operator res97 is absorbed into DSP res97.
+DSP Report: operator res97 is absorbed into DSP res97.
+DSP Report: Generating DSP res96, operation Mode is: A*B.
+DSP Report: operator res96 is absorbed into DSP res96.
+DSP Report: operator res96 is absorbed into DSP res96.
+DSP Report: Generating DSP res95, operation Mode is: A*B.
+DSP Report: operator res95 is absorbed into DSP res95.
+DSP Report: operator res95 is absorbed into DSP res95.
+DSP Report: Generating DSP res110, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res110 is absorbed into DSP res110.
+DSP Report: operator res110 is absorbed into DSP res110.
+DSP Report: Generating DSP res109, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res109 is absorbed into DSP res109.
+DSP Report: operator res109 is absorbed into DSP res109.
+DSP Report: Generating DSP res108, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res108 is absorbed into DSP res108.
+DSP Report: operator res108 is absorbed into DSP res108.
+DSP Report: Generating DSP res107, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res107 is absorbed into DSP res107.
+DSP Report: operator res107 is absorbed into DSP res107.
+DSP Report: Generating DSP res106, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res106 is absorbed into DSP res106.
+DSP Report: operator res106 is absorbed into DSP res106.
+DSP Report: Generating DSP res105, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res105 is absorbed into DSP res105.
+DSP Report: operator res105 is absorbed into DSP res105.
+DSP Report: Generating DSP res104, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res104 is absorbed into DSP res104.
+DSP Report: operator res104 is absorbed into DSP res104.
+DSP Report: Generating DSP res103, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res103 is absorbed into DSP res103.
+DSP Report: operator res103 is absorbed into DSP res103.
+DSP Report: Generating DSP res102, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res102 is absorbed into DSP res102.
+DSP Report: operator res102 is absorbed into DSP res102.
+DSP Report: Generating DSP res101, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res101 is absorbed into DSP res101.
+DSP Report: operator res101 is absorbed into DSP res101.
+DSP Report: Generating DSP res100, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res100 is absorbed into DSP res100.
+DSP Report: operator res100 is absorbed into DSP res100.
+DSP Report: Generating DSP res99, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res99 is absorbed into DSP res99.
+DSP Report: operator res99 is absorbed into DSP res99.
+DSP Report: Generating DSP res98, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res98 is absorbed into DSP res98.
+DSP Report: operator res98 is absorbed into DSP res98.
+DSP Report: Generating DSP res97, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res97 is absorbed into DSP res97.
+DSP Report: operator res97 is absorbed into DSP res97.
+DSP Report: Generating DSP res96, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res96 is absorbed into DSP res96.
+DSP Report: operator res96 is absorbed into DSP res96.
+DSP Report: Generating DSP res95, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res95 is absorbed into DSP res95.
+DSP Report: operator res95 is absorbed into DSP res95.
+DSP Report: Generating DSP res94, operation Mode is: A*B.
+DSP Report: operator res94 is absorbed into DSP res94.
+DSP Report: operator res94 is absorbed into DSP res94.
+DSP Report: Generating DSP res93, operation Mode is: A*B.
+DSP Report: operator res93 is absorbed into DSP res93.
+DSP Report: operator res93 is absorbed into DSP res93.
+DSP Report: Generating DSP res92, operation Mode is: A*B.
+DSP Report: operator res92 is absorbed into DSP res92.
+DSP Report: operator res92 is absorbed into DSP res92.
+DSP Report: Generating DSP res91, operation Mode is: A*B.
+DSP Report: operator res91 is absorbed into DSP res91.
+DSP Report: operator res91 is absorbed into DSP res91.
+DSP Report: Generating DSP res90, operation Mode is: A*B.
+DSP Report: operator res90 is absorbed into DSP res90.
+DSP Report: operator res90 is absorbed into DSP res90.
+DSP Report: Generating DSP res89, operation Mode is: A*B.
+DSP Report: operator res89 is absorbed into DSP res89.
+DSP Report: operator res89 is absorbed into DSP res89.
+DSP Report: Generating DSP res88, operation Mode is: A*B.
+DSP Report: operator res88 is absorbed into DSP res88.
+DSP Report: operator res88 is absorbed into DSP res88.
+DSP Report: Generating DSP res87, operation Mode is: A*B.
+DSP Report: operator res87 is absorbed into DSP res87.
+DSP Report: operator res87 is absorbed into DSP res87.
+DSP Report: Generating DSP res86, operation Mode is: A*B.
+DSP Report: operator res86 is absorbed into DSP res86.
+DSP Report: operator res86 is absorbed into DSP res86.
+DSP Report: Generating DSP res85, operation Mode is: A*B.
+DSP Report: operator res85 is absorbed into DSP res85.
+DSP Report: operator res85 is absorbed into DSP res85.
+DSP Report: Generating DSP res84, operation Mode is: A*B.
+DSP Report: operator res84 is absorbed into DSP res84.
+DSP Report: operator res84 is absorbed into DSP res84.
+DSP Report: Generating DSP res83, operation Mode is: A*B.
+DSP Report: operator res83 is absorbed into DSP res83.
+DSP Report: operator res83 is absorbed into DSP res83.
+DSP Report: Generating DSP res82, operation Mode is: A*B.
+DSP Report: operator res82 is absorbed into DSP res82.
+DSP Report: operator res82 is absorbed into DSP res82.
+DSP Report: Generating DSP res81, operation Mode is: A*B.
+DSP Report: operator res81 is absorbed into DSP res81.
+DSP Report: operator res81 is absorbed into DSP res81.
+DSP Report: Generating DSP res80, operation Mode is: A*B.
+DSP Report: operator res80 is absorbed into DSP res80.
+DSP Report: operator res80 is absorbed into DSP res80.
+DSP Report: Generating DSP res79, operation Mode is: A*B.
+DSP Report: operator res79 is absorbed into DSP res79.
+DSP Report: operator res79 is absorbed into DSP res79.
+DSP Report: Generating DSP res94, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res94 is absorbed into DSP res94.
+DSP Report: operator res94 is absorbed into DSP res94.
+DSP Report: Generating DSP res93, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res93 is absorbed into DSP res93.
+DSP Report: operator res93 is absorbed into DSP res93.
+DSP Report: Generating DSP res92, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res92 is absorbed into DSP res92.
+DSP Report: operator res92 is absorbed into DSP res92.
+DSP Report: Generating DSP res91, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res91 is absorbed into DSP res91.
+DSP Report: operator res91 is absorbed into DSP res91.
+DSP Report: Generating DSP res90, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res90 is absorbed into DSP res90.
+DSP Report: operator res90 is absorbed into DSP res90.
+DSP Report: Generating DSP res89, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res89 is absorbed into DSP res89.
+DSP Report: operator res89 is absorbed into DSP res89.
+DSP Report: Generating DSP res88, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res88 is absorbed into DSP res88.
+DSP Report: operator res88 is absorbed into DSP res88.
+DSP Report: Generating DSP res87, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res87 is absorbed into DSP res87.
+DSP Report: operator res87 is absorbed into DSP res87.
+DSP Report: Generating DSP res86, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res86 is absorbed into DSP res86.
+DSP Report: operator res86 is absorbed into DSP res86.
+DSP Report: Generating DSP res85, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res85 is absorbed into DSP res85.
+DSP Report: operator res85 is absorbed into DSP res85.
+DSP Report: Generating DSP res84, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res84 is absorbed into DSP res84.
+DSP Report: operator res84 is absorbed into DSP res84.
+DSP Report: Generating DSP res83, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res83 is absorbed into DSP res83.
+DSP Report: operator res83 is absorbed into DSP res83.
+DSP Report: Generating DSP res82, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res82 is absorbed into DSP res82.
+DSP Report: operator res82 is absorbed into DSP res82.
+DSP Report: Generating DSP res81, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res81 is absorbed into DSP res81.
+DSP Report: operator res81 is absorbed into DSP res81.
+DSP Report: Generating DSP res80, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res80 is absorbed into DSP res80.
+DSP Report: operator res80 is absorbed into DSP res80.
+DSP Report: Generating DSP res79, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res79 is absorbed into DSP res79.
+DSP Report: operator res79 is absorbed into DSP res79.
+DSP Report: Generating DSP res78, operation Mode is: A*B.
+DSP Report: operator res78 is absorbed into DSP res78.
+DSP Report: operator res78 is absorbed into DSP res78.
+DSP Report: Generating DSP res77, operation Mode is: A*B.
+DSP Report: operator res77 is absorbed into DSP res77.
+DSP Report: operator res77 is absorbed into DSP res77.
+DSP Report: Generating DSP res76, operation Mode is: A*B.
+DSP Report: operator res76 is absorbed into DSP res76.
+DSP Report: operator res76 is absorbed into DSP res76.
+DSP Report: Generating DSP res75, operation Mode is: A*B.
+DSP Report: operator res75 is absorbed into DSP res75.
+DSP Report: operator res75 is absorbed into DSP res75.
+DSP Report: Generating DSP res74, operation Mode is: A*B.
+DSP Report: operator res74 is absorbed into DSP res74.
+DSP Report: operator res74 is absorbed into DSP res74.
+DSP Report: Generating DSP res73, operation Mode is: A*B.
+DSP Report: operator res73 is absorbed into DSP res73.
+DSP Report: operator res73 is absorbed into DSP res73.
+DSP Report: Generating DSP res72, operation Mode is: A*B.
+DSP Report: operator res72 is absorbed into DSP res72.
+DSP Report: operator res72 is absorbed into DSP res72.
+DSP Report: Generating DSP res71, operation Mode is: A*B.
+DSP Report: operator res71 is absorbed into DSP res71.
+DSP Report: operator res71 is absorbed into DSP res71.
+DSP Report: Generating DSP res70, operation Mode is: A*B.
+DSP Report: operator res70 is absorbed into DSP res70.
+DSP Report: operator res70 is absorbed into DSP res70.
+DSP Report: Generating DSP res69, operation Mode is: A*B.
+DSP Report: operator res69 is absorbed into DSP res69.
+DSP Report: operator res69 is absorbed into DSP res69.
+DSP Report: Generating DSP res68, operation Mode is: A*B.
+DSP Report: operator res68 is absorbed into DSP res68.
+DSP Report: operator res68 is absorbed into DSP res68.
+DSP Report: Generating DSP res67, operation Mode is: A*B.
+DSP Report: operator res67 is absorbed into DSP res67.
+DSP Report: operator res67 is absorbed into DSP res67.
+DSP Report: Generating DSP res66, operation Mode is: A*B.
+DSP Report: operator res66 is absorbed into DSP res66.
+DSP Report: operator res66 is absorbed into DSP res66.
+DSP Report: Generating DSP res65, operation Mode is: A*B.
+DSP Report: operator res65 is absorbed into DSP res65.
+DSP Report: operator res65 is absorbed into DSP res65.
+DSP Report: Generating DSP res64, operation Mode is: A*B.
+DSP Report: operator res64 is absorbed into DSP res64.
+DSP Report: operator res64 is absorbed into DSP res64.
+DSP Report: Generating DSP res63, operation Mode is: A*B.
+DSP Report: operator res63 is absorbed into DSP res63.
+DSP Report: operator res63 is absorbed into DSP res63.
+DSP Report: Generating DSP res78, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res78 is absorbed into DSP res78.
+DSP Report: operator res78 is absorbed into DSP res78.
+DSP Report: Generating DSP res77, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res77 is absorbed into DSP res77.
+DSP Report: operator res77 is absorbed into DSP res77.
+DSP Report: Generating DSP res76, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res76 is absorbed into DSP res76.
+DSP Report: operator res76 is absorbed into DSP res76.
+DSP Report: Generating DSP res75, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res75 is absorbed into DSP res75.
+DSP Report: operator res75 is absorbed into DSP res75.
+DSP Report: Generating DSP res74, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res74 is absorbed into DSP res74.
+DSP Report: operator res74 is absorbed into DSP res74.
+DSP Report: Generating DSP res73, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res73 is absorbed into DSP res73.
+DSP Report: operator res73 is absorbed into DSP res73.
+DSP Report: Generating DSP res72, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res72 is absorbed into DSP res72.
+DSP Report: operator res72 is absorbed into DSP res72.
+DSP Report: Generating DSP res71, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res71 is absorbed into DSP res71.
+DSP Report: operator res71 is absorbed into DSP res71.
+DSP Report: Generating DSP res70, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res70 is absorbed into DSP res70.
+DSP Report: operator res70 is absorbed into DSP res70.
+DSP Report: Generating DSP res69, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res69 is absorbed into DSP res69.
+DSP Report: operator res69 is absorbed into DSP res69.
+DSP Report: Generating DSP res68, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res68 is absorbed into DSP res68.
+DSP Report: operator res68 is absorbed into DSP res68.
+DSP Report: Generating DSP res67, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res67 is absorbed into DSP res67.
+DSP Report: operator res67 is absorbed into DSP res67.
+DSP Report: Generating DSP res66, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res66 is absorbed into DSP res66.
+DSP Report: operator res66 is absorbed into DSP res66.
+DSP Report: Generating DSP res65, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res65 is absorbed into DSP res65.
+DSP Report: operator res65 is absorbed into DSP res65.
+DSP Report: Generating DSP res64, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res64 is absorbed into DSP res64.
+DSP Report: operator res64 is absorbed into DSP res64.
+DSP Report: Generating DSP res63, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res63 is absorbed into DSP res63.
+DSP Report: operator res63 is absorbed into DSP res63.
+DSP Report: Generating DSP res62, operation Mode is: A*B.
+DSP Report: operator res62 is absorbed into DSP res62.
+DSP Report: operator res62 is absorbed into DSP res62.
+DSP Report: Generating DSP res61, operation Mode is: A*B.
+DSP Report: operator res61 is absorbed into DSP res61.
+DSP Report: operator res61 is absorbed into DSP res61.
+DSP Report: Generating DSP res60, operation Mode is: A*B.
+DSP Report: operator res60 is absorbed into DSP res60.
+DSP Report: operator res60 is absorbed into DSP res60.
+DSP Report: Generating DSP res59, operation Mode is: A*B.
+DSP Report: operator res59 is absorbed into DSP res59.
+DSP Report: operator res59 is absorbed into DSP res59.
+DSP Report: Generating DSP res58, operation Mode is: A*B.
+DSP Report: operator res58 is absorbed into DSP res58.
+DSP Report: operator res58 is absorbed into DSP res58.
+DSP Report: Generating DSP res57, operation Mode is: A*B.
+DSP Report: operator res57 is absorbed into DSP res57.
+DSP Report: operator res57 is absorbed into DSP res57.
+DSP Report: Generating DSP res56, operation Mode is: A*B.
+DSP Report: operator res56 is absorbed into DSP res56.
+DSP Report: operator res56 is absorbed into DSP res56.
+DSP Report: Generating DSP res55, operation Mode is: A*B.
+DSP Report: operator res55 is absorbed into DSP res55.
+DSP Report: operator res55 is absorbed into DSP res55.
+DSP Report: Generating DSP res54, operation Mode is: A*B.
+DSP Report: operator res54 is absorbed into DSP res54.
+DSP Report: operator res54 is absorbed into DSP res54.
+DSP Report: Generating DSP res53, operation Mode is: A*B.
+DSP Report: operator res53 is absorbed into DSP res53.
+DSP Report: operator res53 is absorbed into DSP res53.
+DSP Report: Generating DSP res52, operation Mode is: A*B.
+DSP Report: operator res52 is absorbed into DSP res52.
+DSP Report: operator res52 is absorbed into DSP res52.
+DSP Report: Generating DSP res51, operation Mode is: A*B.
+DSP Report: operator res51 is absorbed into DSP res51.
+DSP Report: operator res51 is absorbed into DSP res51.
+DSP Report: Generating DSP res50, operation Mode is: A*B.
+DSP Report: operator res50 is absorbed into DSP res50.
+DSP Report: operator res50 is absorbed into DSP res50.
+DSP Report: Generating DSP res49, operation Mode is: A*B.
+DSP Report: operator res49 is absorbed into DSP res49.
+DSP Report: operator res49 is absorbed into DSP res49.
+DSP Report: Generating DSP res48, operation Mode is: A*B.
+DSP Report: operator res48 is absorbed into DSP res48.
+DSP Report: operator res48 is absorbed into DSP res48.
+DSP Report: Generating DSP res47, operation Mode is: A*B.
+DSP Report: operator res47 is absorbed into DSP res47.
+DSP Report: operator res47 is absorbed into DSP res47.
+DSP Report: Generating DSP res62, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res62 is absorbed into DSP res62.
+DSP Report: operator res62 is absorbed into DSP res62.
+DSP Report: Generating DSP res61, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res61 is absorbed into DSP res61.
+DSP Report: operator res61 is absorbed into DSP res61.
+DSP Report: Generating DSP res60, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res60 is absorbed into DSP res60.
+DSP Report: operator res60 is absorbed into DSP res60.
+DSP Report: Generating DSP res59, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res59 is absorbed into DSP res59.
+DSP Report: operator res59 is absorbed into DSP res59.
+DSP Report: Generating DSP res58, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res58 is absorbed into DSP res58.
+DSP Report: operator res58 is absorbed into DSP res58.
+DSP Report: Generating DSP res57, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res57 is absorbed into DSP res57.
+DSP Report: operator res57 is absorbed into DSP res57.
+DSP Report: Generating DSP res56, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res56 is absorbed into DSP res56.
+DSP Report: operator res56 is absorbed into DSP res56.
+DSP Report: Generating DSP res55, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res55 is absorbed into DSP res55.
+DSP Report: operator res55 is absorbed into DSP res55.
+DSP Report: Generating DSP res54, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res54 is absorbed into DSP res54.
+DSP Report: operator res54 is absorbed into DSP res54.
+DSP Report: Generating DSP res53, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res53 is absorbed into DSP res53.
+DSP Report: operator res53 is absorbed into DSP res53.
+DSP Report: Generating DSP res52, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res52 is absorbed into DSP res52.
+DSP Report: operator res52 is absorbed into DSP res52.
+DSP Report: Generating DSP res51, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res51 is absorbed into DSP res51.
+DSP Report: operator res51 is absorbed into DSP res51.
+DSP Report: Generating DSP res50, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res50 is absorbed into DSP res50.
+DSP Report: operator res50 is absorbed into DSP res50.
+DSP Report: Generating DSP res49, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res49 is absorbed into DSP res49.
+DSP Report: operator res49 is absorbed into DSP res49.
+DSP Report: Generating DSP res48, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res48 is absorbed into DSP res48.
+DSP Report: operator res48 is absorbed into DSP res48.
+DSP Report: Generating DSP res47, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res47 is absorbed into DSP res47.
+DSP Report: operator res47 is absorbed into DSP res47.
+DSP Report: Generating DSP res46, operation Mode is: A*B.
+DSP Report: operator res46 is absorbed into DSP res46.
+DSP Report: operator res46 is absorbed into DSP res46.
+DSP Report: Generating DSP res45, operation Mode is: A*B.
+DSP Report: operator res45 is absorbed into DSP res45.
+DSP Report: operator res45 is absorbed into DSP res45.
+DSP Report: Generating DSP res44, operation Mode is: A*B.
+DSP Report: operator res44 is absorbed into DSP res44.
+DSP Report: operator res44 is absorbed into DSP res44.
+DSP Report: Generating DSP res43, operation Mode is: A*B.
+DSP Report: operator res43 is absorbed into DSP res43.
+DSP Report: operator res43 is absorbed into DSP res43.
+DSP Report: Generating DSP res42, operation Mode is: A*B.
+DSP Report: operator res42 is absorbed into DSP res42.
+DSP Report: operator res42 is absorbed into DSP res42.
+DSP Report: Generating DSP res41, operation Mode is: A*B.
+DSP Report: operator res41 is absorbed into DSP res41.
+DSP Report: operator res41 is absorbed into DSP res41.
+DSP Report: Generating DSP res40, operation Mode is: A*B.
+DSP Report: operator res40 is absorbed into DSP res40.
+DSP Report: operator res40 is absorbed into DSP res40.
+DSP Report: Generating DSP res39, operation Mode is: A*B.
+DSP Report: operator res39 is absorbed into DSP res39.
+DSP Report: operator res39 is absorbed into DSP res39.
+DSP Report: Generating DSP res38, operation Mode is: A*B.
+DSP Report: operator res38 is absorbed into DSP res38.
+DSP Report: operator res38 is absorbed into DSP res38.
+DSP Report: Generating DSP res37, operation Mode is: A*B.
+DSP Report: operator res37 is absorbed into DSP res37.
+DSP Report: operator res37 is absorbed into DSP res37.
+DSP Report: Generating DSP res36, operation Mode is: A*B.
+DSP Report: operator res36 is absorbed into DSP res36.
+DSP Report: operator res36 is absorbed into DSP res36.
+DSP Report: Generating DSP res35, operation Mode is: A*B.
+DSP Report: operator res35 is absorbed into DSP res35.
+DSP Report: operator res35 is absorbed into DSP res35.
+DSP Report: Generating DSP res34, operation Mode is: A*B.
+DSP Report: operator res34 is absorbed into DSP res34.
+DSP Report: operator res34 is absorbed into DSP res34.
+DSP Report: Generating DSP res33, operation Mode is: A*B.
+DSP Report: operator res33 is absorbed into DSP res33.
+DSP Report: operator res33 is absorbed into DSP res33.
+DSP Report: Generating DSP res32, operation Mode is: A*B.
+DSP Report: operator res32 is absorbed into DSP res32.
+DSP Report: operator res32 is absorbed into DSP res32.
+DSP Report: Generating DSP res31, operation Mode is: A*B.
+DSP Report: operator res31 is absorbed into DSP res31.
+DSP Report: operator res31 is absorbed into DSP res31.
+DSP Report: Generating DSP res46, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res46 is absorbed into DSP res46.
+DSP Report: operator res46 is absorbed into DSP res46.
+DSP Report: Generating DSP res45, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res45 is absorbed into DSP res45.
+DSP Report: operator res45 is absorbed into DSP res45.
+DSP Report: Generating DSP res44, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res44 is absorbed into DSP res44.
+DSP Report: operator res44 is absorbed into DSP res44.
+DSP Report: Generating DSP res43, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res43 is absorbed into DSP res43.
+DSP Report: operator res43 is absorbed into DSP res43.
+DSP Report: Generating DSP res42, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res42 is absorbed into DSP res42.
+DSP Report: operator res42 is absorbed into DSP res42.
+DSP Report: Generating DSP res41, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res41 is absorbed into DSP res41.
+DSP Report: operator res41 is absorbed into DSP res41.
+DSP Report: Generating DSP res40, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res40 is absorbed into DSP res40.
+DSP Report: operator res40 is absorbed into DSP res40.
+DSP Report: Generating DSP res39, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res39 is absorbed into DSP res39.
+DSP Report: operator res39 is absorbed into DSP res39.
+DSP Report: Generating DSP res38, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res38 is absorbed into DSP res38.
+DSP Report: operator res38 is absorbed into DSP res38.
+DSP Report: Generating DSP res37, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res37 is absorbed into DSP res37.
+DSP Report: operator res37 is absorbed into DSP res37.
+DSP Report: Generating DSP res36, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res36 is absorbed into DSP res36.
+DSP Report: operator res36 is absorbed into DSP res36.
+DSP Report: Generating DSP res35, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res35 is absorbed into DSP res35.
+DSP Report: operator res35 is absorbed into DSP res35.
+DSP Report: Generating DSP res34, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res34 is absorbed into DSP res34.
+DSP Report: operator res34 is absorbed into DSP res34.
+DSP Report: Generating DSP res33, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res33 is absorbed into DSP res33.
+DSP Report: operator res33 is absorbed into DSP res33.
+DSP Report: Generating DSP res32, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res32 is absorbed into DSP res32.
+DSP Report: operator res32 is absorbed into DSP res32.
+DSP Report: Generating DSP res31, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res31 is absorbed into DSP res31.
+DSP Report: operator res31 is absorbed into DSP res31.
+DSP Report: Generating DSP res30, operation Mode is: A*B.
+DSP Report: operator res30 is absorbed into DSP res30.
+DSP Report: operator res30 is absorbed into DSP res30.
+DSP Report: Generating DSP res29, operation Mode is: A*B.
+DSP Report: operator res29 is absorbed into DSP res29.
+DSP Report: operator res29 is absorbed into DSP res29.
+DSP Report: Generating DSP res28, operation Mode is: A*B.
+DSP Report: operator res28 is absorbed into DSP res28.
+DSP Report: operator res28 is absorbed into DSP res28.
+DSP Report: Generating DSP res27, operation Mode is: A*B.
+DSP Report: operator res27 is absorbed into DSP res27.
+DSP Report: operator res27 is absorbed into DSP res27.
+DSP Report: Generating DSP res26, operation Mode is: A*B.
+DSP Report: operator res26 is absorbed into DSP res26.
+DSP Report: operator res26 is absorbed into DSP res26.
+DSP Report: Generating DSP res25, operation Mode is: A*B.
+DSP Report: operator res25 is absorbed into DSP res25.
+DSP Report: operator res25 is absorbed into DSP res25.
+DSP Report: Generating DSP res24, operation Mode is: A*B.
+DSP Report: operator res24 is absorbed into DSP res24.
+DSP Report: operator res24 is absorbed into DSP res24.
+DSP Report: Generating DSP res23, operation Mode is: A*B.
+DSP Report: operator res23 is absorbed into DSP res23.
+DSP Report: operator res23 is absorbed into DSP res23.
+DSP Report: Generating DSP res22, operation Mode is: A*B.
+DSP Report: operator res22 is absorbed into DSP res22.
+DSP Report: operator res22 is absorbed into DSP res22.
+DSP Report: Generating DSP res21, operation Mode is: A*B.
+DSP Report: operator res21 is absorbed into DSP res21.
+DSP Report: operator res21 is absorbed into DSP res21.
+DSP Report: Generating DSP res20, operation Mode is: A*B.
+DSP Report: operator res20 is absorbed into DSP res20.
+DSP Report: operator res20 is absorbed into DSP res20.
+DSP Report: Generating DSP res19, operation Mode is: A*B.
+DSP Report: operator res19 is absorbed into DSP res19.
+DSP Report: operator res19 is absorbed into DSP res19.
+DSP Report: Generating DSP res18, operation Mode is: A*B.
+DSP Report: operator res18 is absorbed into DSP res18.
+DSP Report: operator res18 is absorbed into DSP res18.
+DSP Report: Generating DSP res17, operation Mode is: A*B.
+DSP Report: operator res17 is absorbed into DSP res17.
+DSP Report: operator res17 is absorbed into DSP res17.
+DSP Report: Generating DSP res16, operation Mode is: A*B.
+DSP Report: operator res16 is absorbed into DSP res16.
+DSP Report: operator res16 is absorbed into DSP res16.
+DSP Report: Generating DSP res15, operation Mode is: A*B.
+DSP Report: operator res15 is absorbed into DSP res15.
+DSP Report: operator res15 is absorbed into DSP res15.
+DSP Report: Generating DSP res30, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res30 is absorbed into DSP res30.
+DSP Report: operator res30 is absorbed into DSP res30.
+DSP Report: Generating DSP res29, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res29 is absorbed into DSP res29.
+DSP Report: operator res29 is absorbed into DSP res29.
+DSP Report: Generating DSP res28, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res28 is absorbed into DSP res28.
+DSP Report: operator res28 is absorbed into DSP res28.
+DSP Report: Generating DSP res27, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res27 is absorbed into DSP res27.
+DSP Report: operator res27 is absorbed into DSP res27.
+DSP Report: Generating DSP res26, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res26 is absorbed into DSP res26.
+DSP Report: operator res26 is absorbed into DSP res26.
+DSP Report: Generating DSP res25, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res25 is absorbed into DSP res25.
+DSP Report: operator res25 is absorbed into DSP res25.
+DSP Report: Generating DSP res24, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res24 is absorbed into DSP res24.
+DSP Report: operator res24 is absorbed into DSP res24.
+DSP Report: Generating DSP res23, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res23 is absorbed into DSP res23.
+DSP Report: operator res23 is absorbed into DSP res23.
+DSP Report: Generating DSP res22, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res22 is absorbed into DSP res22.
+DSP Report: operator res22 is absorbed into DSP res22.
+DSP Report: Generating DSP res21, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res21 is absorbed into DSP res21.
+DSP Report: operator res21 is absorbed into DSP res21.
+DSP Report: Generating DSP res20, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res20 is absorbed into DSP res20.
+DSP Report: operator res20 is absorbed into DSP res20.
+DSP Report: Generating DSP res19, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res19 is absorbed into DSP res19.
+DSP Report: operator res19 is absorbed into DSP res19.
+DSP Report: Generating DSP res18, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res18 is absorbed into DSP res18.
+DSP Report: operator res18 is absorbed into DSP res18.
+DSP Report: Generating DSP res17, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res17 is absorbed into DSP res17.
+DSP Report: operator res17 is absorbed into DSP res17.
+DSP Report: Generating DSP res16, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res16 is absorbed into DSP res16.
+DSP Report: operator res16 is absorbed into DSP res16.
+DSP Report: Generating DSP res15, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res15 is absorbed into DSP res15.
+DSP Report: operator res15 is absorbed into DSP res15.
+DSP Report: Generating DSP res14, operation Mode is: A*B.
+DSP Report: operator res14 is absorbed into DSP res14.
+DSP Report: operator res14 is absorbed into DSP res14.
+DSP Report: Generating DSP res13, operation Mode is: A*B.
+DSP Report: operator res13 is absorbed into DSP res13.
+DSP Report: operator res13 is absorbed into DSP res13.
+DSP Report: Generating DSP res12, operation Mode is: A*B.
+DSP Report: operator res12 is absorbed into DSP res12.
+DSP Report: operator res12 is absorbed into DSP res12.
+DSP Report: Generating DSP res11, operation Mode is: A*B.
+DSP Report: operator res11 is absorbed into DSP res11.
+DSP Report: operator res11 is absorbed into DSP res11.
+DSP Report: Generating DSP res10, operation Mode is: A*B.
+DSP Report: operator res10 is absorbed into DSP res10.
+DSP Report: operator res10 is absorbed into DSP res10.
+DSP Report: Generating DSP res9, operation Mode is: A*B.
+DSP Report: operator res9 is absorbed into DSP res9.
+DSP Report: operator res9 is absorbed into DSP res9.
+DSP Report: Generating DSP res8, operation Mode is: A*B.
+DSP Report: operator res8 is absorbed into DSP res8.
+DSP Report: operator res8 is absorbed into DSP res8.
+DSP Report: Generating DSP res7, operation Mode is: A*B.
+DSP Report: operator res7 is absorbed into DSP res7.
+DSP Report: operator res7 is absorbed into DSP res7.
+DSP Report: Generating DSP res6, operation Mode is: A*B.
+DSP Report: operator res6 is absorbed into DSP res6.
+DSP Report: operator res6 is absorbed into DSP res6.
+DSP Report: Generating DSP res5, operation Mode is: A*B.
+DSP Report: operator res5 is absorbed into DSP res5.
+DSP Report: operator res5 is absorbed into DSP res5.
+DSP Report: Generating DSP res4, operation Mode is: A*B.
+DSP Report: operator res4 is absorbed into DSP res4.
+DSP Report: operator res4 is absorbed into DSP res4.
+DSP Report: Generating DSP res3, operation Mode is: A*B.
+DSP Report: operator res3 is absorbed into DSP res3.
+DSP Report: operator res3 is absorbed into DSP res3.
+DSP Report: Generating DSP res2, operation Mode is: A*B.
+DSP Report: operator res2 is absorbed into DSP res2.
+DSP Report: operator res2 is absorbed into DSP res2.
+DSP Report: Generating DSP res1, operation Mode is: A*B.
+DSP Report: operator res1 is absorbed into DSP res1.
+DSP Report: operator res1 is absorbed into DSP res1.
+DSP Report: Generating DSP res14, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res14 is absorbed into DSP res14.
+DSP Report: operator res14 is absorbed into DSP res14.
+DSP Report: Generating DSP res13, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res13 is absorbed into DSP res13.
+DSP Report: operator res13 is absorbed into DSP res13.
+DSP Report: Generating DSP res12, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res12 is absorbed into DSP res12.
+DSP Report: operator res12 is absorbed into DSP res12.
+DSP Report: Generating DSP res11, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res11 is absorbed into DSP res11.
+DSP Report: operator res11 is absorbed into DSP res11.
+DSP Report: Generating DSP res10, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res10 is absorbed into DSP res10.
+DSP Report: operator res10 is absorbed into DSP res10.
+DSP Report: Generating DSP res9, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res9 is absorbed into DSP res9.
+DSP Report: operator res9 is absorbed into DSP res9.
+DSP Report: Generating DSP res8, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res8 is absorbed into DSP res8.
+DSP Report: operator res8 is absorbed into DSP res8.
+DSP Report: Generating DSP res7, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res7 is absorbed into DSP res7.
+DSP Report: operator res7 is absorbed into DSP res7.
+DSP Report: Generating DSP res6, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res6 is absorbed into DSP res6.
+DSP Report: operator res6 is absorbed into DSP res6.
+DSP Report: Generating DSP res5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res5 is absorbed into DSP res5.
+DSP Report: operator res5 is absorbed into DSP res5.
+DSP Report: Generating DSP res4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res4 is absorbed into DSP res4.
+DSP Report: operator res4 is absorbed into DSP res4.
+DSP Report: Generating DSP res3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res3 is absorbed into DSP res3.
+DSP Report: operator res3 is absorbed into DSP res3.
+DSP Report: Generating DSP res2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res2 is absorbed into DSP res2.
+DSP Report: operator res2 is absorbed into DSP res2.
+DSP Report: Generating DSP res1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res1 is absorbed into DSP res1.
+DSP Report: operator res1 is absorbed into DSP res1.
+DSP Report: Generating DSP res0, operation Mode is: A*B.
+DSP Report: operator res0 is absorbed into DSP res0.
+DSP Report: operator res0 is absorbed into DSP res0.
+DSP Report: Generating DSP res0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator res0 is absorbed into DSP res0.
+DSP Report: operator res0 is absorbed into DSP res0.
+INFO: [Synth 8-5546] ROM "freq_divider/temp3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "seven_segment_ctrl/Frequency_divider_for_ssd_Ctrl/temp" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+WARNING: [Synth 8-3332] Sequential element (res_reg[31]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[30]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[29]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[28]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[27]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[26]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[25]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[24]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[23]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[22]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[21]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[20]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[19]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[18]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (res_reg[17]) is unused and will be removed from module alu.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 254, Available = 240. Use report_utilization command for details.
+DSP Report: Generating DSP res126, operation Mode is (post resource management): A*B.
+DSP Report: operator res126 is absorbed into DSP res126.
+DSP Report: operator res126 is absorbed into DSP res126.
+DSP Report: Generating DSP res125, operation Mode is (post resource management): A*B.
+DSP Report: operator res125 is absorbed into DSP res125.
+DSP Report: operator res125 is absorbed into DSP res125.
+DSP Report: Generating DSP res124, operation Mode is (post resource management): A*B.
+DSP Report: operator res124 is absorbed into DSP res124.
+DSP Report: operator res124 is absorbed into DSP res124.
+DSP Report: Generating DSP res123, operation Mode is (post resource management): A*B.
+DSP Report: operator res123 is absorbed into DSP res123.
+DSP Report: operator res123 is absorbed into DSP res123.
+DSP Report: Generating DSP res122, operation Mode is (post resource management): A*B.
+DSP Report: operator res122 is absorbed into DSP res122.
+DSP Report: operator res122 is absorbed into DSP res122.
+DSP Report: Generating DSP res121, operation Mode is (post resource management): A*B.
+DSP Report: operator res121 is absorbed into DSP res121.
+DSP Report: operator res121 is absorbed into DSP res121.
+DSP Report: Generating DSP res120, operation Mode is (post resource management): A*B.
+DSP Report: operator res120 is absorbed into DSP res120.
+DSP Report: operator res120 is absorbed into DSP res120.
+DSP Report: Generating DSP res119, operation Mode is (post resource management): A*B.
+DSP Report: operator res119 is absorbed into DSP res119.
+DSP Report: operator res119 is absorbed into DSP res119.
+DSP Report: Generating DSP res118, operation Mode is (post resource management): A*B.
+DSP Report: operator res118 is absorbed into DSP res118.
+DSP Report: operator res118 is absorbed into DSP res118.
+DSP Report: Generating DSP res117, operation Mode is (post resource management): A*B.
+DSP Report: operator res117 is absorbed into DSP res117.
+DSP Report: operator res117 is absorbed into DSP res117.
+DSP Report: Generating DSP res116, operation Mode is (post resource management): A*B.
+DSP Report: operator res116 is absorbed into DSP res116.
+DSP Report: operator res116 is absorbed into DSP res116.
+DSP Report: Generating DSP res115, operation Mode is (post resource management): A*B.
+DSP Report: operator res115 is absorbed into DSP res115.
+DSP Report: operator res115 is absorbed into DSP res115.
+DSP Report: Generating DSP res114, operation Mode is (post resource management): A*B.
+DSP Report: operator res114 is absorbed into DSP res114.
+DSP Report: operator res114 is absorbed into DSP res114.
+DSP Report: Generating DSP res113, operation Mode is (post resource management): A*B.
+DSP Report: operator res113 is absorbed into DSP res113.
+DSP Report: operator res113 is absorbed into DSP res113.
+DSP Report: Generating DSP res112, operation Mode is (post resource management): A*B.
+DSP Report: operator res112 is absorbed into DSP res112.
+DSP Report: operator res112 is absorbed into DSP res112.
+DSP Report: Generating DSP res111, operation Mode is (post resource management): A*B.
+DSP Report: operator res111 is absorbed into DSP res111.
+DSP Report: operator res111 is absorbed into DSP res111.
+DSP Report: Generating DSP res110, operation Mode is (post resource management): A*B.
+DSP Report: operator res110 is absorbed into DSP res110.
+DSP Report: operator res110 is absorbed into DSP res110.
+DSP Report: Generating DSP res109, operation Mode is (post resource management): A*B.
+DSP Report: operator res109 is absorbed into DSP res109.
+DSP Report: operator res109 is absorbed into DSP res109.
+DSP Report: Generating DSP res108, operation Mode is (post resource management): A*B.
+DSP Report: operator res108 is absorbed into DSP res108.
+DSP Report: operator res108 is absorbed into DSP res108.
+DSP Report: Generating DSP res107, operation Mode is (post resource management): A*B.
+DSP Report: operator res107 is absorbed into DSP res107.
+DSP Report: operator res107 is absorbed into DSP res107.
+DSP Report: Generating DSP res106, operation Mode is (post resource management): A*B.
+DSP Report: operator res106 is absorbed into DSP res106.
+DSP Report: operator res106 is absorbed into DSP res106.
+DSP Report: Generating DSP res105, operation Mode is (post resource management): A*B.
+DSP Report: operator res105 is absorbed into DSP res105.
+DSP Report: operator res105 is absorbed into DSP res105.
+DSP Report: Generating DSP res104, operation Mode is (post resource management): A*B.
+DSP Report: operator res104 is absorbed into DSP res104.
+DSP Report: operator res104 is absorbed into DSP res104.
+DSP Report: Generating DSP res103, operation Mode is (post resource management): A*B.
+DSP Report: operator res103 is absorbed into DSP res103.
+DSP Report: operator res103 is absorbed into DSP res103.
+DSP Report: Generating DSP res102, operation Mode is (post resource management): A*B.
+DSP Report: operator res102 is absorbed into DSP res102.
+DSP Report: operator res102 is absorbed into DSP res102.
+DSP Report: Generating DSP res101, operation Mode is (post resource management): A*B.
+DSP Report: operator res101 is absorbed into DSP res101.
+DSP Report: operator res101 is absorbed into DSP res101.
+DSP Report: Generating DSP res100, operation Mode is (post resource management): A*B.
+DSP Report: operator res100 is absorbed into DSP res100.
+DSP Report: operator res100 is absorbed into DSP res100.
+DSP Report: Generating DSP res93, operation Mode is (post resource management): A*B.
+DSP Report: operator res93 is absorbed into DSP res93.
+DSP Report: operator res93 is absorbed into DSP res93.
+DSP Report: Generating DSP res92, operation Mode is (post resource management): A*B.
+DSP Report: operator res92 is absorbed into DSP res92.
+DSP Report: operator res92 is absorbed into DSP res92.
+DSP Report: Generating DSP res91, operation Mode is (post resource management): A*B.
+DSP Report: operator res91 is absorbed into DSP res91.
+DSP Report: operator res91 is absorbed into DSP res91.
+DSP Report: Generating DSP res90, operation Mode is (post resource management): A*B.
+DSP Report: operator res90 is absorbed into DSP res90.
+DSP Report: operator res90 is absorbed into DSP res90.
+DSP Report: Generating DSP res89, operation Mode is (post resource management): A*B.
+DSP Report: operator res89 is absorbed into DSP res89.
+DSP Report: operator res89 is absorbed into DSP res89.
+DSP Report: Generating DSP res88, operation Mode is (post resource management): A*B.
+DSP Report: operator res88 is absorbed into DSP res88.
+DSP Report: operator res88 is absorbed into DSP res88.
+DSP Report: Generating DSP res87, operation Mode is (post resource management): A*B.
+DSP Report: operator res87 is absorbed into DSP res87.
+DSP Report: operator res87 is absorbed into DSP res87.
+DSP Report: Generating DSP res86, operation Mode is (post resource management): A*B.
+DSP Report: operator res86 is absorbed into DSP res86.
+DSP Report: operator res86 is absorbed into DSP res86.
+DSP Report: Generating DSP res85, operation Mode is (post resource management): A*B.
+DSP Report: operator res85 is absorbed into DSP res85.
+DSP Report: operator res85 is absorbed into DSP res85.
+DSP Report: Generating DSP res84, operation Mode is (post resource management): A*B.
+DSP Report: operator res84 is absorbed into DSP res84.
+DSP Report: operator res84 is absorbed into DSP res84.
+DSP Report: Generating DSP res83, operation Mode is (post resource management): A*B.
+DSP Report: operator res83 is absorbed into DSP res83.
+DSP Report: operator res83 is absorbed into DSP res83.
+DSP Report: Generating DSP res82, operation Mode is (post resource management): A*B.
+DSP Report: operator res82 is absorbed into DSP res82.
+DSP Report: operator res82 is absorbed into DSP res82.
+DSP Report: Generating DSP res81, operation Mode is (post resource management): A*B.
+DSP Report: operator res81 is absorbed into DSP res81.
+DSP Report: operator res81 is absorbed into DSP res81.
+DSP Report: Generating DSP res80, operation Mode is (post resource management): A*B.
+DSP Report: operator res80 is absorbed into DSP res80.
+DSP Report: operator res80 is absorbed into DSP res80.
+DSP Report: Generating DSP res79, operation Mode is (post resource management): A*B.
+DSP Report: operator res79 is absorbed into DSP res79.
+DSP Report: operator res79 is absorbed into DSP res79.
+DSP Report: Generating DSP res78, operation Mode is (post resource management): A*B.
+DSP Report: operator res78 is absorbed into DSP res78.
+DSP Report: operator res78 is absorbed into DSP res78.
+DSP Report: Generating DSP res77, operation Mode is (post resource management): A*B.
+DSP Report: operator res77 is absorbed into DSP res77.
+DSP Report: operator res77 is absorbed into DSP res77.
+DSP Report: Generating DSP res76, operation Mode is (post resource management): A*B.
+DSP Report: operator res76 is absorbed into DSP res76.
+DSP Report: operator res76 is absorbed into DSP res76.
+DSP Report: Generating DSP res75, operation Mode is (post resource management): A*B.
+DSP Report: operator res75 is absorbed into DSP res75.
+DSP Report: operator res75 is absorbed into DSP res75.
+DSP Report: Generating DSP res74, operation Mode is (post resource management): A*B.
+DSP Report: operator res74 is absorbed into DSP res74.
+DSP Report: operator res74 is absorbed into DSP res74.
+DSP Report: Generating DSP res73, operation Mode is (post resource management): A*B.
+DSP Report: operator res73 is absorbed into DSP res73.
+DSP Report: operator res73 is absorbed into DSP res73.
+DSP Report: Generating DSP res72, operation Mode is (post resource management): A*B.
+DSP Report: operator res72 is absorbed into DSP res72.
+DSP Report: operator res72 is absorbed into DSP res72.
+DSP Report: Generating DSP res71, operation Mode is (post resource management): A*B.
+DSP Report: operator res71 is absorbed into DSP res71.
+DSP Report: operator res71 is absorbed into DSP res71.
+DSP Report: Generating DSP res70, operation Mode is (post resource management): A*B.
+DSP Report: operator res70 is absorbed into DSP res70.
+DSP Report: operator res70 is absorbed into DSP res70.
+DSP Report: Generating DSP res69, operation Mode is (post resource management): A*B.
+DSP Report: operator res69 is absorbed into DSP res69.
+DSP Report: operator res69 is absorbed into DSP res69.
+DSP Report: Generating DSP res68, operation Mode is (post resource management): A*B.
+DSP Report: operator res68 is absorbed into DSP res68.
+DSP Report: operator res68 is absorbed into DSP res68.
+DSP Report: Generating DSP res67, operation Mode is (post resource management): A*B.
+DSP Report: operator res67 is absorbed into DSP res67.
+DSP Report: operator res67 is absorbed into DSP res67.
+DSP Report: Generating DSP res66, operation Mode is (post resource management): A*B.
+DSP Report: operator res66 is absorbed into DSP res66.
+DSP Report: operator res66 is absorbed into DSP res66.
+DSP Report: Generating DSP res65, operation Mode is (post resource management): A*B.
+DSP Report: operator res65 is absorbed into DSP res65.
+DSP Report: operator res65 is absorbed into DSP res65.
+DSP Report: Generating DSP res64, operation Mode is (post resource management): A*B.
+DSP Report: operator res64 is absorbed into DSP res64.
+DSP Report: operator res64 is absorbed into DSP res64.
+DSP Report: Generating DSP res63, operation Mode is (post resource management): A*B.
+DSP Report: operator res63 is absorbed into DSP res63.
+DSP Report: operator res63 is absorbed into DSP res63.
+DSP Report: Generating DSP res62, operation Mode is (post resource management): A*B.
+DSP Report: operator res62 is absorbed into DSP res62.
+DSP Report: operator res62 is absorbed into DSP res62.
+DSP Report: Generating DSP res61, operation Mode is (post resource management): A*B.
+DSP Report: operator res61 is absorbed into DSP res61.
+DSP Report: operator res61 is absorbed into DSP res61.
+DSP Report: Generating DSP res60, operation Mode is (post resource management): A*B.
+DSP Report: operator res60 is absorbed into DSP res60.
+DSP Report: operator res60 is absorbed into DSP res60.
+DSP Report: Generating DSP res59, operation Mode is (post resource management): A*B.
+DSP Report: operator res59 is absorbed into DSP res59.
+DSP Report: operator res59 is absorbed into DSP res59.
+DSP Report: Generating DSP res58, operation Mode is (post resource management): A*B.
+DSP Report: operator res58 is absorbed into DSP res58.
+DSP Report: operator res58 is absorbed into DSP res58.
+DSP Report: Generating DSP res57, operation Mode is (post resource management): A*B.
+DSP Report: operator res57 is absorbed into DSP res57.
+DSP Report: operator res57 is absorbed into DSP res57.
+DSP Report: Generating DSP res56, operation Mode is (post resource management): A*B.
+DSP Report: operator res56 is absorbed into DSP res56.
+DSP Report: operator res56 is absorbed into DSP res56.
+DSP Report: Generating DSP res55, operation Mode is (post resource management): A*B.
+DSP Report: operator res55 is absorbed into DSP res55.
+DSP Report: operator res55 is absorbed into DSP res55.
+DSP Report: Generating DSP res54, operation Mode is (post resource management): A*B.
+DSP Report: operator res54 is absorbed into DSP res54.
+DSP Report: operator res54 is absorbed into DSP res54.
+DSP Report: Generating DSP res53, operation Mode is (post resource management): A*B.
+DSP Report: operator res53 is absorbed into DSP res53.
+DSP Report: operator res53 is absorbed into DSP res53.
+DSP Report: Generating DSP res52, operation Mode is (post resource management): A*B.
+DSP Report: operator res52 is absorbed into DSP res52.
+DSP Report: operator res52 is absorbed into DSP res52.
+DSP Report: Generating DSP res51, operation Mode is (post resource management): A*B.
+DSP Report: operator res51 is absorbed into DSP res51.
+DSP Report: operator res51 is absorbed into DSP res51.
+DSP Report: Generating DSP res50, operation Mode is (post resource management): A*B.
+DSP Report: operator res50 is absorbed into DSP res50.
+DSP Report: operator res50 is absorbed into DSP res50.
+DSP Report: Generating DSP res49, operation Mode is (post resource management): A*B.
+DSP Report: operator res49 is absorbed into DSP res49.
+DSP Report: operator res49 is absorbed into DSP res49.
+DSP Report: Generating DSP res48, operation Mode is (post resource management): A*B.
+DSP Report: operator res48 is absorbed into DSP res48.
+DSP Report: operator res48 is absorbed into DSP res48.
+DSP Report: Generating DSP res47, operation Mode is (post resource management): A*B.
+DSP Report: operator res47 is absorbed into DSP res47.
+DSP Report: operator res47 is absorbed into DSP res47.
+DSP Report: Generating DSP res46, operation Mode is (post resource management): A*B.
+DSP Report: operator res46 is absorbed into DSP res46.
+DSP Report: operator res46 is absorbed into DSP res46.
+DSP Report: Generating DSP res45, operation Mode is (post resource management): A*B.
+DSP Report: operator res45 is absorbed into DSP res45.
+DSP Report: operator res45 is absorbed into DSP res45.
+DSP Report: Generating DSP res44, operation Mode is (post resource management): A*B.
+DSP Report: operator res44 is absorbed into DSP res44.
+DSP Report: operator res44 is absorbed into DSP res44.
+DSP Report: Generating DSP res43, operation Mode is (post resource management): A*B.
+DSP Report: operator res43 is absorbed into DSP res43.
+DSP Report: operator res43 is absorbed into DSP res43.
+DSP Report: Generating DSP res42, operation Mode is (post resource management): A*B.
+DSP Report: operator res42 is absorbed into DSP res42.
+DSP Report: operator res42 is absorbed into DSP res42.
+DSP Report: Generating DSP res41, operation Mode is (post resource management): A*B.
+DSP Report: operator res41 is absorbed into DSP res41.
+DSP Report: operator res41 is absorbed into DSP res41.
+DSP Report: Generating DSP res40, operation Mode is (post resource management): A*B.
+DSP Report: operator res40 is absorbed into DSP res40.
+DSP Report: operator res40 is absorbed into DSP res40.
+DSP Report: Generating DSP res39, operation Mode is (post resource management): A*B.
+DSP Report: operator res39 is absorbed into DSP res39.
+DSP Report: operator res39 is absorbed into DSP res39.
+DSP Report: Generating DSP res38, operation Mode is (post resource management): A*B.
+DSP Report: operator res38 is absorbed into DSP res38.
+DSP Report: operator res38 is absorbed into DSP res38.
+DSP Report: Generating DSP res37, operation Mode is (post resource management): A*B.
+DSP Report: operator res37 is absorbed into DSP res37.
+DSP Report: operator res37 is absorbed into DSP res37.
+DSP Report: Generating DSP res36, operation Mode is (post resource management): A*B.
+DSP Report: operator res36 is absorbed into DSP res36.
+DSP Report: operator res36 is absorbed into DSP res36.
+DSP Report: Generating DSP res35, operation Mode is (post resource management): A*B.
+DSP Report: operator res35 is absorbed into DSP res35.
+DSP Report: operator res35 is absorbed into DSP res35.
+DSP Report: Generating DSP res34, operation Mode is (post resource management): A*B.
+DSP Report: operator res34 is absorbed into DSP res34.
+DSP Report: operator res34 is absorbed into DSP res34.
+DSP Report: Generating DSP res33, operation Mode is (post resource management): A*B.
+DSP Report: operator res33 is absorbed into DSP res33.
+DSP Report: operator res33 is absorbed into DSP res33.
+DSP Report: Generating DSP res32, operation Mode is (post resource management): A*B.
+DSP Report: operator res32 is absorbed into DSP res32.
+DSP Report: operator res32 is absorbed into DSP res32.
+DSP Report: Generating DSP res31, operation Mode is (post resource management): A*B.
+DSP Report: operator res31 is absorbed into DSP res31.
+DSP Report: operator res31 is absorbed into DSP res31.
+DSP Report: Generating DSP res30, operation Mode is (post resource management): A*B.
+DSP Report: operator res30 is absorbed into DSP res30.
+DSP Report: operator res30 is absorbed into DSP res30.
+DSP Report: Generating DSP res29, operation Mode is (post resource management): A*B.
+DSP Report: operator res29 is absorbed into DSP res29.
+DSP Report: operator res29 is absorbed into DSP res29.
+DSP Report: Generating DSP res28, operation Mode is (post resource management): A*B.
+DSP Report: operator res28 is absorbed into DSP res28.
+DSP Report: operator res28 is absorbed into DSP res28.
+DSP Report: Generating DSP res27, operation Mode is (post resource management): A*B.
+DSP Report: operator res27 is absorbed into DSP res27.
+DSP Report: operator res27 is absorbed into DSP res27.
+DSP Report: Generating DSP res26, operation Mode is (post resource management): A*B.
+DSP Report: operator res26 is absorbed into DSP res26.
+DSP Report: operator res26 is absorbed into DSP res26.
+DSP Report: Generating DSP res25, operation Mode is (post resource management): A*B.
+DSP Report: operator res25 is absorbed into DSP res25.
+DSP Report: operator res25 is absorbed into DSP res25.
+DSP Report: Generating DSP res24, operation Mode is (post resource management): A*B.
+DSP Report: operator res24 is absorbed into DSP res24.
+DSP Report: operator res24 is absorbed into DSP res24.
+DSP Report: Generating DSP res23, operation Mode is (post resource management): A*B.
+DSP Report: operator res23 is absorbed into DSP res23.
+DSP Report: operator res23 is absorbed into DSP res23.
+DSP Report: Generating DSP res22, operation Mode is (post resource management): A*B.
+DSP Report: operator res22 is absorbed into DSP res22.
+DSP Report: operator res22 is absorbed into DSP res22.
+DSP Report: Generating DSP res21, operation Mode is (post resource management): A*B.
+DSP Report: operator res21 is absorbed into DSP res21.
+DSP Report: operator res21 is absorbed into DSP res21.
+DSP Report: Generating DSP res20, operation Mode is (post resource management): A*B.
+DSP Report: operator res20 is absorbed into DSP res20.
+DSP Report: operator res20 is absorbed into DSP res20.
+DSP Report: Generating DSP res19, operation Mode is (post resource management): A*B.
+DSP Report: operator res19 is absorbed into DSP res19.
+DSP Report: operator res19 is absorbed into DSP res19.
+DSP Report: Generating DSP res18, operation Mode is (post resource management): A*B.
+DSP Report: operator res18 is absorbed into DSP res18.
+DSP Report: operator res18 is absorbed into DSP res18.
+DSP Report: Generating DSP res17, operation Mode is (post resource management): A*B.
+DSP Report: operator res17 is absorbed into DSP res17.
+DSP Report: operator res17 is absorbed into DSP res17.
+DSP Report: Generating DSP res16, operation Mode is (post resource management): A*B.
+DSP Report: operator res16 is absorbed into DSP res16.
+DSP Report: operator res16 is absorbed into DSP res16.
+DSP Report: Generating DSP res15, operation Mode is (post resource management): A*B.
+DSP Report: operator res15 is absorbed into DSP res15.
+DSP Report: operator res15 is absorbed into DSP res15.
+DSP Report: Generating DSP res14, operation Mode is (post resource management): A*B.
+DSP Report: operator res14 is absorbed into DSP res14.
+DSP Report: operator res14 is absorbed into DSP res14.
+DSP Report: Generating DSP res13, operation Mode is (post resource management): A*B.
+DSP Report: operator res13 is absorbed into DSP res13.
+DSP Report: operator res13 is absorbed into DSP res13.
+DSP Report: Generating DSP res12, operation Mode is (post resource management): A*B.
+DSP Report: operator res12 is absorbed into DSP res12.
+DSP Report: operator res12 is absorbed into DSP res12.
+DSP Report: Generating DSP res11, operation Mode is (post resource management): A*B.
+DSP Report: operator res11 is absorbed into DSP res11.
+DSP Report: operator res11 is absorbed into DSP res11.
+DSP Report: Generating DSP res10, operation Mode is (post resource management): A*B.
+DSP Report: operator res10 is absorbed into DSP res10.
+DSP Report: operator res10 is absorbed into DSP res10.
+DSP Report: Generating DSP res8, operation Mode is (post resource management): A*B.
+DSP Report: operator res8 is absorbed into DSP res8.
+DSP Report: operator res8 is absorbed into DSP res8.
+DSP Report: Generating DSP res7, operation Mode is (post resource management): A*B.
+DSP Report: operator res7 is absorbed into DSP res7.
+DSP Report: operator res7 is absorbed into DSP res7.
+DSP Report: Generating DSP res6, operation Mode is (post resource management): A*B.
+DSP Report: operator res6 is absorbed into DSP res6.
+DSP Report: operator res6 is absorbed into DSP res6.
+DSP Report: Generating DSP res5, operation Mode is (post resource management): A*B.
+DSP Report: operator res5 is absorbed into DSP res5.
+DSP Report: operator res5 is absorbed into DSP res5.
+DSP Report: Generating DSP res4, operation Mode is (post resource management): A*B.
+DSP Report: operator res4 is absorbed into DSP res4.
+DSP Report: operator res4 is absorbed into DSP res4.
+DSP Report: Generating DSP res3, operation Mode is (post resource management): A*B.
+DSP Report: operator res3 is absorbed into DSP res3.
+DSP Report: operator res3 is absorbed into DSP res3.
+DSP Report: Generating DSP res2, operation Mode is (post resource management): A*B.
+DSP Report: operator res2 is absorbed into DSP res2.
+DSP Report: operator res2 is absorbed into DSP res2.
+DSP Report: Generating DSP res1, operation Mode is (post resource management): A*B.
+DSP Report: operator res1 is absorbed into DSP res1.
+DSP Report: operator res1 is absorbed into DSP res1.
+DSP Report: Generating DSP res0, operation Mode is (post resource management): A*B.
+DSP Report: operator res0 is absorbed into DSP res0.
+DSP Report: operator res0 is absorbed into DSP res0.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 15     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | A*B            | 18     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu         | (PCIN>>17)+A*B | 15     | 8      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:54 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net \A_reg_n_0_[7]  is driving 1320 big block pins (URAM, BRAM and DSP loads). Created 132 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     3|
+|2     |CARRY4  |   252|
+|3     |DSP48E1 |   120|
+|4     |LUT1    |     8|
+|5     |LUT2    |   361|
+|6     |LUT3    |   192|
+|7     |LUT4    |   341|
+|8     |LUT5    |   349|
+|9     |LUT6    |  1246|
+|10    |MUXF7   |   278|
+|11    |MUXF8   |    97|
+|12    |FDRE    |   346|
+|13    |FDSE    |    12|
+|14    |LD      |    33|
+|15    |IBUF    |    13|
+|16    |OBUF    |    28|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------------------------+-----------+------+
+|      |Instance                           |Module     |Cells |
++------+-----------------------------------+-----------+------+
+|1     |top                                |           |  3679|
+|2     |  KeyPad_ctrl                      |PmodKEYPAD |   106|
+|3     |    C0                             |Decoder    |   106|
+|4     |  alu_1                            |alu        |  2871|
+|5     |  freq_divider                     |FREQDIV    |    40|
+|6     |  seven_segment_ctrl               |ssdCtrl    |   141|
+|7     |    Frequency_divider_for_ssd_Ctrl |FREQDIV_0  |    48|
++------+-----------------------------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:55 . Memory (MB): peak = 969.391 ; gain = 629.078
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 969.391 ; gain = 275.863
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:56 . Memory (MB): peak = 969.391 ; gain = 629.078
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 780 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 969.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  LD => LDCE: 33 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+172 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 969.391 ; gain = 642.348
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 969.391 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'S:/cs2204/calculator_183/calculator_183.runs/synth_1/calculator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file calculator_utilization_synth.rpt -pb calculator_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  1 16:56:55 2019...

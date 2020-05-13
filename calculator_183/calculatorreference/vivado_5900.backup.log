@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Oct  7 09:25:48 2019
+# Process ID: 5900
+# Current directory: C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9504 C:\haldund\work\academic\cs2204\fall2019\labfiles\exp3vdspring2019hex\calculator.xpr
+# Log file: C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/vivado.log
+# Journal file: C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/haldund/work/academic/cs2204/xilinx/2014_2_artix7_sources/XUP_LIB'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 788.957 ; gain = 150.438
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AFD7A
+set_property PROGRAM.FILE {C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator.runs/impl_1/calculator.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator.runs/impl_1/calculator.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 17:19:45 2019...

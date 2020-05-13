@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/cs2204/exp1/coding/crypto.sim/sim_1/impl/timing/xsim/crypto_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/cs2204/exp1/coding/crypto_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_tb

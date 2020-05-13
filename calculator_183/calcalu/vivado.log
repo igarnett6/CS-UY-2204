@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 31 11:15:35 2019
+# Process ID: 5912
+# Current directory: S:/cs2204/exp2/calcalu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5244 S:\cs2204\exp2\calcalu\alu.xpr
+# Log file: S:/cs2204/exp2/calcalu/vivado.log
+# Journal file: S:/cs2204/exp2/calcalu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project S:/cs2204/exp2/calcalu/alu.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'alu.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 697.516 ; gain = 57.848
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 31 13:14:03 2019...

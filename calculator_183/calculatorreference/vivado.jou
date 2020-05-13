@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct  8 11:27:03 2019
+# Process ID: 15416
+# Current directory: C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12068 C:\haldund\work\academic\cs2204\fall2019\labfiles\exp2\calculatorreference\calculator.xpr
+# Log file: C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference/vivado.log
+# Journal file: C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference/calculator.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/cs2204/exp1/coding/crypto.srcs/sources_1/new/crypto.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto
+INFO: [VRFC 10-2263] Analyzing Verilog file "S:/cs2204/exp1/coding/crypto_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_tb

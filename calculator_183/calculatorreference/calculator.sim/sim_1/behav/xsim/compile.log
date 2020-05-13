@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work/academic/cs2204/fall2018/labfiles/exp3v/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work/academic/cs2204/fall2018/labfiles/exp3v/calculator.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/work/academic/cs2204/fall2018/labfiles/exp3v/ssdCtrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ssdCtrl

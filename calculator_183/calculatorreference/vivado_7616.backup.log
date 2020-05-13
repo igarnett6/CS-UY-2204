@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Oct  7 17:37:33 2019
+# Process ID: 7616
+# Current directory: C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16764 C:\haldund\work\academic\cs2204\fall2019\labfiles\exp2\calculatorreference\calculator.xpr
+# Log file: C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference/vivado.log
+# Journal file: C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference/calculator.xpr
+INFO: [Project 1-313] Project file moved from 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex' since last save.
+WARNING: [Project 1-312] File not found as 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/digitalclock/FREQDIV.vhd'; using path 'C:/haldund/work/academic/cs2204/fall2019/labfiles/digitalclock/FREQDIV.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference/calculator.xdc'; using path 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference/calculator_tb.v'; using path 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator_tb.v' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/digitalclock/FREQDIV.vhd'; using path 'C:/haldund/work/academic/cs2204/fall2019/labfiles/digitalclock/FREQDIV.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference/calculator.xdc'; using path 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator.xdc' instead.
+WARNING: [Project 1-312] File not found as 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/digitalclock/FREQDIV.vhd'; using path 'C:/haldund/work/academic/cs2204/fall2019/labfiles/digitalclock/FREQDIV.vhd' instead.
+WARNING: [Project 1-312] File not found as 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp2/calculatorreference/calculator.xdc'; using path 'C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator.xdc' instead.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/haldund/work/academic/cs2204/fall2019/xilinx/2014_2_artix7_sources/XUP_LIB'; using path 'C:/haldund/work/academic/cs2204/xilinx/2014_2_artix7_sources/XUP_LIB' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/haldund/work/academic/cs2204/xilinx/2014_2_artix7_sources/XUP_LIB'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 760.313 ; gain = 146.297
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator.xdc
+export_ip_user_files -of_objects  [get_files C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/haldund/work/academic/cs2204/fall2019/labfiles/exp3vdspring2019hex/calculator_tb.v
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct  7 19:25:21 2019...

@@ -1,0 +1,102 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Time:   10 ns K:     -128 + M:     -128 Result:             -256 Overflow: 0
+Time:   20 ns K:     -128 - M:     -128 Result:                0 Overflow: 0
+Time:   30 ns K:     -128 * M:     -128 Result:            16384 Overflow: 0
+Time:   40 ns K:     -128 / M:     -128 Result:         1 r:   0 Overflow: 0
+Time:   50 ns K:     -128 ^ M:     -128 Result:              256 Overflow: 1
+Time:   60 ns K:     -128 + M:     -127 Result:             -255 Overflow: 0
+Time:   70 ns K:     -128 - M:     -127 Result:               -1 Overflow: 0
+Time:   80 ns K:     -128 * M:     -127 Result:            16256 Overflow: 0
+Time:   90 ns K:     -128 / M:     -127 Result:         1 r:  -1 Overflow: 0
+Time:  100 ns K:     -128 ^ M:     -127 Result:              511 Overflow: 1
+Time:  110 ns K:     -128 + M:     -126 Result:             -254 Overflow: 0
+Time:  120 ns K:     -128 - M:     -126 Result:               -2 Overflow: 0
+Time:  130 ns K:     -128 * M:     -126 Result:            16128 Overflow: 0
+Time:  140 ns K:     -128 / M:     -126 Result:         1 r:  -2 Overflow: 0
+Time:  150 ns K:     -128 ^ M:     -126 Result:              510 Overflow: 1
+Time:  160 ns K:     -128 + M:     -125 Result:             -253 Overflow: 0
+Time:  170 ns K:     -128 - M:     -125 Result:               -3 Overflow: 0
+Time:  180 ns K:     -128 * M:     -125 Result:            16000 Overflow: 0
+Time:  190 ns K:     -128 / M:     -125 Result:         1 r:  -3 Overflow: 0
+Time:  200 ns K:     -128 ^ M:     -125 Result:              509 Overflow: 1
+Time:  210 ns K:     -128 + M:     -124 Result:             -252 Overflow: 0
+Time:  220 ns K:     -128 - M:     -124 Result:               -4 Overflow: 0
+Time:  230 ns K:     -128 * M:     -124 Result:            15872 Overflow: 0
+Time:  240 ns K:     -128 / M:     -124 Result:         1 r:  -4 Overflow: 0
+Time:  250 ns K:     -128 ^ M:     -124 Result:              508 Overflow: 1
+Time:  260 ns K:     -128 + M:     -123 Result:             -251 Overflow: 0
+Time:  270 ns K:     -128 - M:     -123 Result:               -5 Overflow: 0
+Time:  280 ns K:     -128 * M:     -123 Result:            15744 Overflow: 0
+Time:  290 ns K:     -128 / M:     -123 Result:         1 r:  -5 Overflow: 0
+Time:  300 ns K:     -128 ^ M:     -123 Result:              507 Overflow: 1
+Time:  310 ns K:     -128 + M:     -122 Result:             -250 Overflow: 0
+Time:  320 ns K:     -128 - M:     -122 Result:               -6 Overflow: 0
+Time:  330 ns K:     -128 * M:     -122 Result:            15616 Overflow: 0
+Time:  340 ns K:     -128 / M:     -122 Result:         1 r:  -6 Overflow: 0
+Time:  350 ns K:     -128 ^ M:     -122 Result:              506 Overflow: 1
+Time:  360 ns K:     -128 + M:     -121 Result:             -249 Overflow: 0
+Time:  370 ns K:     -128 - M:     -121 Result:               -7 Overflow: 0
+Time:  380 ns K:     -128 * M:     -121 Result:            15488 Overflow: 0
+Time:  390 ns K:     -128 / M:     -121 Result:         1 r:  -7 Overflow: 0
+Time:  400 ns K:     -128 ^ M:     -121 Result:              505 Overflow: 1
+Time:  410 ns K:     -128 + M:     -120 Result:             -248 Overflow: 0
+Time:  420 ns K:     -128 - M:     -120 Result:               -8 Overflow: 0
+Time:  430 ns K:     -128 * M:     -120 Result:            15360 Overflow: 0
+Time:  440 ns K:     -128 / M:     -120 Result:         1 r:  -8 Overflow: 0
+Time:  450 ns K:     -128 ^ M:     -120 Result:              504 Overflow: 1
+Time:  460 ns K:     -128 + M:     -119 Result:             -247 Overflow: 0
+Time:  470 ns K:     -128 - M:     -119 Result:               -9 Overflow: 0
+Time:  480 ns K:     -128 * M:     -119 Result:            15232 Overflow: 0
+Time:  490 ns K:     -128 / M:     -119 Result:         1 r:  -9 Overflow: 0
+Time:  500 ns K:     -128 ^ M:     -119 Result:              503 Overflow: 1
+Time:  510 ns K:     -128 + M:     -118 Result:             -246 Overflow: 0
+Time:  520 ns K:     -128 - M:     -118 Result:              -10 Overflow: 0
+Time:  530 ns K:     -128 * M:     -118 Result:            15104 Overflow: 0
+Time:  540 ns K:     -128 / M:     -118 Result:         1 r: -10 Overflow: 0
+Time:  550 ns K:     -128 ^ M:     -118 Result:              502 Overflow: 1
+Time:  560 ns K:     -128 + M:     -117 Result:             -245 Overflow: 0
+Time:  570 ns K:     -128 - M:     -117 Result:              -11 Overflow: 0
+Time:  580 ns K:     -128 * M:     -117 Result:            14976 Overflow: 0
+Time:  590 ns K:     -128 / M:     -117 Result:         1 r: -11 Overflow: 0
+Time:  600 ns K:     -128 ^ M:     -117 Result:              501 Overflow: 1
+Time:  610 ns K:     -128 + M:     -116 Result:             -244 Overflow: 0
+Time:  620 ns K:     -128 - M:     -116 Result:              -12 Overflow: 0
+Time:  630 ns K:     -128 * M:     -116 Result:            14848 Overflow: 0
+Time:  640 ns K:     -128 / M:     -116 Result:         1 r: -12 Overflow: 0
+Time:  650 ns K:     -128 ^ M:     -116 Result:              500 Overflow: 1
+Time:  660 ns K:     -128 + M:     -115 Result:             -243 Overflow: 0
+Time:  670 ns K:     -128 - M:     -115 Result:              -13 Overflow: 0
+Time:  680 ns K:     -128 * M:     -115 Result:            14720 Overflow: 0
+Time:  690 ns K:     -128 / M:     -115 Result:         1 r: -13 Overflow: 0
+Time:  700 ns K:     -128 ^ M:     -115 Result:              499 Overflow: 1
+Time:  710 ns K:     -128 + M:     -114 Result:             -242 Overflow: 0
+Time:  720 ns K:     -128 - M:     -114 Result:              -14 Overflow: 0
+Time:  730 ns K:     -128 * M:     -114 Result:            14592 Overflow: 0
+Time:  740 ns K:     -128 / M:     -114 Result:         1 r: -14 Overflow: 0
+Time:  750 ns K:     -128 ^ M:     -114 Result:              498 Overflow: 1
+Time:  760 ns K:     -128 + M:     -113 Result:             -241 Overflow: 0
+Time:  770 ns K:     -128 - M:     -113 Result:              -15 Overflow: 0
+Time:  780 ns K:     -128 * M:     -113 Result:            14464 Overflow: 0
+Time:  790 ns K:     -128 / M:     -113 Result:         1 r: -15 Overflow: 0
+Time:  800 ns K:     -128 ^ M:     -113 Result:              497 Overflow: 1
+Time:  810 ns K:     -128 + M:     -112 Result:             -240 Overflow: 0
+Time:  820 ns K:     -128 - M:     -112 Result:              -16 Overflow: 0
+Time:  830 ns K:     -128 * M:     -112 Result:            14336 Overflow: 0
+Time:  840 ns K:     -128 / M:     -112 Result:         1 r: -16 Overflow: 0
+Time:  850 ns K:     -128 ^ M:     -112 Result:              496 Overflow: 1
+Time:  860 ns K:     -128 + M:     -111 Result:             -239 Overflow: 0
+Time:  870 ns K:     -128 - M:     -111 Result:              -17 Overflow: 0
+Time:  880 ns K:     -128 * M:     -111 Result:            14208 Overflow: 0
+Time:  890 ns K:     -128 / M:     -111 Result:         1 r: -17 Overflow: 0
+Time:  900 ns K:     -128 ^ M:     -111 Result:              495 Overflow: 1
+Time:  910 ns K:     -128 + M:     -110 Result:             -238 Overflow: 0
+Time:  920 ns K:     -128 - M:     -110 Result:              -18 Overflow: 0
+Time:  930 ns K:     -128 * M:     -110 Result:            14080 Overflow: 0
+Time:  940 ns K:     -128 / M:     -110 Result:         1 r: -18 Overflow: 0
+Time:  950 ns K:     -128 ^ M:     -110 Result:              494 Overflow: 1
+Time:  960 ns K:     -128 + M:     -109 Result:             -237 Overflow: 0
+Time:  970 ns K:     -128 - M:     -109 Result:              -19 Overflow: 0
+Time:  980 ns K:     -128 * M:     -109 Result:            13952 Overflow: 0
+Time:  990 ns K:     -128 / M:     -109 Result:         1 r: -19 Overflow: 0
+Time: 1000 ns K:     -128 ^ M:     -109 Result:              493 Overflow: 1

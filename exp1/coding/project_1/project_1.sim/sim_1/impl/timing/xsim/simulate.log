@@ -1,0 +1,22 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Time:   10 ns I:   0 DATA: 0000  KEY: 0000 Output: 000x
+Time:   20 ns I:   1 DATA: 0000  KEY: 0001 Output: 0001
+Time:   30 ns I:   2 DATA: 0000  KEY: 0010 Output: 0010
+Time:   40 ns I:   3 DATA: 0000  KEY: 0011 Output: 0011
+Time:   50 ns I:   4 DATA: 0000  KEY: 0100 Output: 0100
+Time:   60 ns I:   5 DATA: 0000  KEY: 0101 Output: 0101
+Time:   70 ns I:   6 DATA: 0000  KEY: 0110 Output: 0110
+Time:   80 ns I:   7 DATA: 0000  KEY: 0111 Output: 0111
+Time:   90 ns I:   8 DATA: 0000  KEY: 1000 Output: 1000
+Time:  100 ns I:   9 DATA: 0000  KEY: 1001 Output: 1001
+Time:  110 ns I:  10 DATA: 0000  KEY: 1010 Output: 1010
+Time:  120 ns I:  11 DATA: 0000  KEY: 1011 Output: 1011
+Time:  130 ns I:  12 DATA: 0000  KEY: 1100 Output: 1100
+Time:  140 ns I:  13 DATA: 0000  KEY: 1101 Output: 1101
+Time:  150 ns I:  14 DATA: 0000  KEY: 1110 Output: 1110
+Time:  160 ns I:  15 DATA: 0000  KEY: 1111 Output: 1111
+Time:  170 ns I:  16 DATA: 0001  KEY: 0000 Output: 0000
+Time:  180 ns I:  17 DATA: 0001  KEY: 0001 Output: 0000
+Time:  190 ns I:  18 DATA: 0001  KEY: 0010 Output: 0011
+Time:  200 ns I:  19 DATA: 0001  KEY: 0011 Output: 0010
